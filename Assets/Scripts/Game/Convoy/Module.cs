@@ -45,7 +45,7 @@ namespace Game.Convoy
             Convoy = FindAnyObjectByType<ConvoyManager>();
             Online = true;
             BatteryCharge = BatteryCapacity;
-            UpdateInterfaceBatteryCharge();
+            UpdateUIBatteryCharge();
         }
 
         protected virtual void Update()
@@ -117,9 +117,9 @@ namespace Game.Convoy
 
         #endregion
 
-        #region Interface Utilities
+        #region UI Utilities
 
-        public void WakeInterfaceBattery(bool enable)
+        public void WakeUIBattery(bool enable)
         {
             // ChargeStatus.color = enable ? Color.yellow : Color.black;
             
@@ -130,10 +130,17 @@ namespace Game.Convoy
             }
         }
 
-        public void UpdateInterfaceBatteryCharge()
+        public void UpdateUIBatteryCharge()
         {
             BatteryGauge.maxValue = BatteryCapacity;
             BatteryGauge.value = BatteryCharge;
+        }
+
+        public void ToggleChargeStatus(bool enable)
+        {
+            Color indicatorColor = enable ? Color.white : Color.black;
+            
+            ChargeStatus.color = indicatorColor;
         }
 
         #endregion

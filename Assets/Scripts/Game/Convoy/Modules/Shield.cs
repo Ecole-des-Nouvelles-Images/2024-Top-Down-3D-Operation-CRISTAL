@@ -27,7 +27,7 @@ namespace Game.Convoy.Modules
             if (IsActive)
             {
                 BatteryCharge -= ConsumptionPerSecond * Time.fixedDeltaTime;
-                UpdateInterfaceBatteryCharge();
+                UpdateUIBatteryCharge();
             }
                 
         }

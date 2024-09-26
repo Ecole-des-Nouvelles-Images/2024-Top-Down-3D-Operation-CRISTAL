@@ -33,7 +33,7 @@ namespace Game.Convoy.Modules
         {
             base.Awake();
             TargetModuleID = ConvoyManager.Modules.FindIndex(module => module.GetType() == this.GetType());
-            _targetModule.WakeInterfaceBattery(true);
+            _targetModule.WakeUIBattery(true);
         }
 
         private void FixedUpdate()
@@ -42,7 +42,7 @@ namespace Game.Convoy.Modules
             {
                 _targetModule.BatteryCharge += PowerOutput * Time.fixedDeltaTime;
                 _targetModule.BatteryCharge = Mathf.Clamp(_targetModule.BatteryCharge, 0, _targetModule.BatteryMaxCapacity);
-                _targetModule.UpdateInterfaceBatteryCharge();
+                _targetModule.UpdateUIBatteryCharge();
             }
         }
 
@@ -52,9 +52,11 @@ namespace Game.Convoy.Modules
             {
                 if (!Online) return;
 
-                _targetModule.WakeInterfaceBattery(false);
+                _targetModule.WakeUIBattery(false);
+                _targetModule.ToggleChargeStatus(false);
                 TargetModuleID--;
-                _targetModule.WakeInterfaceBattery(true);
+                _targetModule.WakeUIBattery(true);
+                _targetModule.ToggleChargeStatus(true);
                 _ignoreInputInteraction = true;
             }
             else 
@@ -67,9 +69,11 @@ namespace Game.Convoy.Modules
         {
             if (!Online) return;
 
-            _targetModule.WakeInterfaceBattery(false);
+            _targetModule.WakeUIBattery(false);
+            _targetModule.ToggleChargeStatus(false);
             TargetModuleID++;
-            _targetModule.WakeInterfaceBattery(true);
+            _targetModule.WakeUIBattery(true);
+            _targetModule.ToggleChargeStatus(true);
         }
     }
 }
