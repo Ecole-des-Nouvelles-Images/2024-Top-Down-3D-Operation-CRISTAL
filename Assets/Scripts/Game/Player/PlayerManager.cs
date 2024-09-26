@@ -23,6 +23,7 @@ namespace Game.Player
         {
             ++PlayerNumber;
             _convoyHead.UpdateMaximumControllers(PlayerNumber);
+            GameManager.Instance.AddPlayerReadyIcon(player, PlayerNumber);
         }
 
         public void OnPlayerLeft(PlayerInput player)

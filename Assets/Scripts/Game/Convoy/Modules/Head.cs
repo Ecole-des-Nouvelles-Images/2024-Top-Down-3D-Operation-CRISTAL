@@ -1,4 +1,6 @@
 using Game.Player;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game.Convoy.Modules
 {
@@ -14,8 +16,10 @@ namespace Game.Convoy.Modules
         public override bool EnterModule(PlayerController newController)
         {
             if (!InteractionReady) return false;
-            
+
             base.EnterModule(newController);
+                
+            newController.ReadyPanel.GetComponentInChildren<Image>().color = Color.green;
             
             if (Controllers.Count == MaximumControllers)
             {
@@ -31,7 +35,13 @@ namespace Game.Convoy.Modules
 
             return true;
         }
-        
+
+        public override bool ExitModule(PlayerController currentController)
+        {
+            currentController.ReadyPanel.GetComponentInChildren<Image>().color = Color.red;
+            return base.ExitModule(currentController);
+        }
+
         public override void Operate(PlayerController currentController) {} // Does nothing;
 
         public void UpdateMaximumControllers(int currentControllersPlaying)

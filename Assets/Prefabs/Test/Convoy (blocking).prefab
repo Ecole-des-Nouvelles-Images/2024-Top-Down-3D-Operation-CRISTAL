@@ -393,6 +393,9 @@ MonoBehaviour:
   Online: 0
   BatteryCapacity: 100
   ConsumptionPerSecond: 10
+  BatteryGauge: {fileID: 0}
+  ChargeStatus: {fileID: 0}
+  ModuleIcon: {fileID: 0}
   BarrierRight: {fileID: 7360360737938735459}
   BarrierLeft: {fileID: 532263762952355610}
 --- !u!1 &2531818824321517920
@@ -518,6 +521,9 @@ MonoBehaviour:
   Online: 1
   BatteryCapacity: 0
   ConsumptionPerSecond: 0
+  BatteryGauge: {fileID: 0}
+  ChargeStatus: {fileID: 0}
+  ModuleIcon: {fileID: 0}
   _dronePrefab: {fileID: 5436700856083752263, guid: 48d389a7ce4cfb74ba76123114520caf,
     type: 3}
   _droneParent: {fileID: 0}
@@ -528,6 +534,7 @@ MonoBehaviour:
   - {fileID: 1447410446820486911}
   _droneMoveSpeed: 70
   _droneMiningSpeed: 10
+  _droneArmorPlates: 2
   _droneRebuildTime: 3
   _enableDroneAutoRebuild: 1
 --- !u!1 &4173533142810984021
@@ -648,7 +655,6 @@ GameObject:
   - component: {fileID: 1593832765547537681}
   - component: {fileID: 3569253764492473149}
   - component: {fileID: 5185078362542983828}
-  - component: {fileID: 2691580241212037814}
   m_Layer: 7
   m_Name: Convoy (blocking)
   m_TagString: Convoy
@@ -690,6 +696,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maximumDurability: 1000
+  Gauge: {fileID: 0}
+  GaugeFill: {fileID: 0}
+  NominalColor: {r: 0, g: 0, b: 0, a: 0}
+  WarningColor: {r: 0, g: 0, b: 0, a: 0}
+  DangerColor: {r: 0, g: 0, b: 0, a: 0}
+  CriticalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!65 &1593832765547537681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -824,20 +836,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2691580241212037814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4354305950936325617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80f9f154c1d0b2942b47a59acef6a662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fontColor: {r: 0.7039544, g: 0.16509432, b: 1, a: 1}
-  backgroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
 --- !u!1 &4620498135329035810
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,6 +958,9 @@ MonoBehaviour:
   Online: 0
   BatteryCapacity: 0
   ConsumptionPerSecond: 0
+  BatteryGauge: {fileID: 0}
+  ChargeStatus: {fileID: 0}
+  ModuleIcon: {fileID: 0}
   PowerOutput: 10
 --- !u!1 &4665657057826408191
 GameObject:
@@ -1084,17 +1085,20 @@ MonoBehaviour:
   Online: 0
   BatteryCapacity: 100
   ConsumptionPerSecond: 10
+  BatteryGauge: {fileID: 0}
+  ChargeStatus: {fileID: 0}
+  ModuleIcon: {fileID: 0}
   _turret: {fileID: 19617961230686860}
-  _canon: {fileID: 8615475418782093600}
+  Canon: {fileID: 0}
   _torque: 20
-  _range: 200
+  Range: 0
   _damagePerSecond: 20
   _targetLayers:
     serializedVersion: 2
     m_Bits: 512
-  _raySlicePrecision: 1
-  _beam: {fileID: 5258196872341446597}
-  _lineRendererVertices: 10
+  _raySliceKeenness: 0.1
+  SphereCastRadius: 5
+  BeamRenderer: {fileID: 0}
 --- !u!1 &4766256894700246293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,17 +1936,20 @@ MonoBehaviour:
   Online: 0
   BatteryCapacity: 100
   ConsumptionPerSecond: 10
+  BatteryGauge: {fileID: 0}
+  ChargeStatus: {fileID: 0}
+  ModuleIcon: {fileID: 0}
   _turret: {fileID: 6833633258998843163}
-  _canon: {fileID: 7956474716512126571}
+  Canon: {fileID: 0}
   _torque: 20
-  _range: 200
+  Range: 0
   _damagePerSecond: 20
   _targetLayers:
     serializedVersion: 2
     m_Bits: 512
-  _raySlicePrecision: 1
-  _beam: {fileID: 4227245630166407082}
-  _lineRendererVertices: 10
+  _raySliceKeenness: 0.1
+  SphereCastRadius: 5
+  BeamRenderer: {fileID: 0}
 --- !u!1 &8434170046877153348
 GameObject:
   m_ObjectHideFlags: 0

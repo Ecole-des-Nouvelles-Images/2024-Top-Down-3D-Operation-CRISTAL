@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Game.Convoy;
+using Game.Player;
 using Game.POIs;
 using Game.Terrain;
 using Internal;
@@ -26,6 +27,8 @@ namespace Game
         public GameObject PauseUI;
         public GameObject StartPanel;
         public GameObject InfoBox;
+        public GameObject PlayerReadyIconPrefab;
+        public GameObject ReadyPanel;
         public TMP_Text CrystalCounter;
 
         public Action OnStopTransit;
@@ -89,6 +92,17 @@ namespace Game
         {
             StartPanel.SetActive(false);
             InfoBox.SetActive(true);
+        }
+
+        public void AddPlayerReadyIcon(PlayerInput player, int playerID)
+        {
+            PlayerController controller = player.gameObject.GetComponent<PlayerController>();
+            GameObject playerPanel = Instantiate(PlayerReadyIconPrefab, ReadyPanel.transform);
+
+            playerPanel.GetComponentInChildren<TMP_Text>().text = "J" + playerID;
+            
+            controller.ReadyPanel = playerPanel;
+            
         }
 
         #endregion

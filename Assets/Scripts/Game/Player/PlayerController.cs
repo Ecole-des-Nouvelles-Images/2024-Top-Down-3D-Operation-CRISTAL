@@ -26,6 +26,8 @@ namespace Game.Player
         public Color PlayerColor { get; private set; }
         private Vector2 _inputValue;
         private Vector3 _referenceMoveAxis;
+        
+        public GameObject ReadyPanel { get; set; }
 
         private void Awake()
         {
