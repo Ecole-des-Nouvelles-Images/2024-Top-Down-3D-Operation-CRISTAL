@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Internal;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -88,14 +89,15 @@ namespace Game
             
             Master.GetFloat("BackgroundStopVolume", out float initialStop);
             float normalVolume = -80 * (1 - Volume);
-
+            
             while (t < 1)
             {
                 t += Time.unscaledDeltaTime / duration;
                 float modifiedT = Mathf.Pow(t, 2); // Use the square of t as the input to SmoothStep
                 float smoothT = Mathf.SmoothStep(0f, 1f, modifiedT);
+                
                 Master.SetFloat("BackgroundTransitVolume", Mathf.Lerp(-80, normalVolume, smoothT));
-                Master.SetFloat("BackgroundStopVolume", Mathf.Lerp(initialStop, 0, smoothT));
+                Master.SetFloat("BackgroundStopVolume", Mathf.Lerp(initialStop, -80, smoothT));
                 yield return null;
             }
         }

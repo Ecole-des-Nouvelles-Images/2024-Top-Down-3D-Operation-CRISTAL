@@ -72,15 +72,7 @@ namespace Game.Terrain
                 ScrolledDistance -= ScrolledDistance;
             }
         }
-
-        private float _debugDistance;
-        private float _debugNormDistance;
         
-        private void OnGUI()
-        {
-            GUI.Label(new Rect(10, 10,100, 20), $"Dist: {_debugDistance}; Norm: {_debugNormDistance}", new GUIStyle { fontSize = 20 });
-        }
-
         #region Chunk Management
         
         private void MoveChunks(float speed, float timeDelta)
@@ -155,9 +147,6 @@ namespace Game.Terrain
                 actualDistance = _currentStopZone.transform.position.x;
                 normalizeDistance = (actualDistance - 1) / initialDistance;
                 
-                _debugDistance = actualDistance;
-                _debugNormDistance = normalizeDistance;
-                
                 float shakeMultiplier = normalizeDistance;
                 
                 currentSpeed = ScrolledDistanceCurve.Evaluate(normalizeDistance);
@@ -173,16 +162,10 @@ namespace Game.Terrain
             GameManager.Instance.OnStopZoneReached.Invoke(stopZoneChunk);
             yield return new WaitForSeconds(0.5f);
             Head.InteractionReady = true;
+            GameManager.Instance.IsInTransit = false;
             BrakeVFX.SetActive(false);
             ConvoyTrails.SetActive(false);
-            AudioManager.Instance.SwitchToStopZone(5f);
-        }
-
-        private float EaseOut(float t, float b, float c, float d)
-        {
-            t /= d;
-            t--;
-            return c * (t * t * t + 1) + b;
+            AudioManager.Instance.SwitchToStopZone(AudioManager.Instance.TransitionDuration);
         }
         
         public void RestartTransit()
@@ -202,9 +185,10 @@ namespace Game.Terrain
             TerrainChunk startingChunk = CreateChunk(_chunksRoot, _lastEnqueued.transform.localPosition.x + _offsetBetweenChunks);
             float currentSpeed;
             
+            GameManager.Instance.IsInTransit = true;
             CameraManager.Instance.SwitchCameraFocus(true, Side.None);
             ConvoyTrails.SetActive(true);
-            AudioManager.Instance.SwitchToTransit(3f);
+            AudioManager.Instance.SwitchToTransit(AudioManager.Instance.TransitionDuration);
             
             Chunks.Enqueue(startingChunk);
             _lastEnqueued = startingChunk;
@@ -213,9 +197,9 @@ namespace Game.Terrain
 
             while (ScrolledDistance < 240)
             {
-                float mulitplier = (ScrolledDistance / 240) + 0.01f ; // TODO: Starting speed controllable with 'ScrolledDistance' starting offset
-                currentSpeed = Mathf.Clamp(_scrollSpeed * mulitplier, 0, _scrollSpeed);
-                _camNoise.m_AmplitudeGain = 0.08f * mulitplier;
+                float multiplier = (ScrolledDistance / 240) + 0.01f ; // TODO: Starting speed controllable with 'ScrolledDistance' starting offset
+                currentSpeed = Mathf.Clamp(_scrollSpeed * multiplier, 0, _scrollSpeed);
+                _camNoise.m_AmplitudeGain = 0.08f * multiplier;
                 
                 MoveChunks(currentSpeed, Time.deltaTime);
 

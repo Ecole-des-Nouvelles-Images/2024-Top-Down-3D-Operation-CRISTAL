@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 2307312011722664615, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2307312011722664615, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
@@ -364,7 +364,7 @@ PrefabInstance:
     - target: {fileID: 2307312011722664615, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 2658934133885564142, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
@@ -424,7 +424,7 @@ PrefabInstance:
     - target: {fileID: 3361659687497815088, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.88750005
       objectReference: {fileID: 0}
     - target: {fileID: 3361659687497815088, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
@@ -434,7 +434,7 @@ PrefabInstance:
     - target: {fileID: 3361659687497815088, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.7875
       objectReference: {fileID: 0}
     - target: {fileID: 3456880233376032822, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   AlarmModerate: {fileID: 8300000, guid: 23696b68b31408b439f9664995db44d3, type: 3}
   AlarmHeavy: {fileID: 8300000, guid: cebc3a6734247f344ad6d8200af060a9, type: 3}
   AlarmCritical: {fileID: 8300000, guid: ff9fd8d76ffa1bc43b21640fe7a98522, type: 3}
-  TransitionDuration: 3
+  TransitionDuration: 2
 --- !u!4 &1141087502
 Transform:
   m_ObjectHideFlags: 0
