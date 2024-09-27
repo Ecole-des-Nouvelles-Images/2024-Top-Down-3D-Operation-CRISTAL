@@ -1960,6 +1960,39 @@ MonoBehaviour:
   _offsetBetweenChunks: 240
   RepeatDistance: 240
   ScrolledDistance: 0
+  ScrolledDistanceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 381.9646
+      outSlope: 381.9646
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.011406528
+    - serializedVersion: 3
+      time: 0.09661743
+      value: 20
+      inSlope: -15.196339
+      outSlope: 158.38376
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.444528
+      outWeight: 0.072832935
+    - serializedVersion: 3
+      time: 1
+      value: 80
+      inSlope: -3.2621067
+      outSlope: -0.18525398
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.20517094
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1608233502
 Transform:
   m_ObjectHideFlags: 0

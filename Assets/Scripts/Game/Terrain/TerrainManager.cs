@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,6 +10,7 @@ using Internal;
 using Game.Terrain.Procedural;
 using Game.Convoy;
 using Game.Convoy.Modules;
+using Random = UnityEngine.Random;
 
 namespace Game.Terrain
 {
@@ -29,6 +31,7 @@ namespace Game.Terrain
         [SerializeField] private float _offsetBetweenChunks = 240f;
         public float RepeatDistance = 240f;
         public float ScrolledDistance;
+        public AnimationCurve ScrolledDistanceCurve; // x is the speed and y should be the Distance to the stop Zone
         
         private Queue<TerrainChunk> Chunks { get; set; }
         private TerrainChunk _lastEnqueued;
@@ -68,6 +71,14 @@ namespace Game.Terrain
                 UpdateRoad();
                 ScrolledDistance -= ScrolledDistance;
             }
+        }
+
+        private float _debugDistance;
+        private float _debugNormDistance;
+        
+        private void OnGUI()
+        {
+            GUI.Label(new Rect(10, 10,100, 20), $"Dist: {_debugDistance}; Norm: {_debugNormDistance}", new GUIStyle { fontSize = 20 });
         }
 
         #region Chunk Management
@@ -142,12 +153,14 @@ namespace Game.Terrain
             while (_currentStopZone.transform.position.x > _convoy.position.x + stopThreshold)
             {
                 actualDistance = _currentStopZone.transform.position.x;
-                normalizeDistance = actualDistance / initialDistance;
+                normalizeDistance = (actualDistance - 1) / initialDistance;
                 
-                float brakeMultiplier = normalizeDistance;
+                _debugDistance = actualDistance;
+                _debugNormDistance = normalizeDistance;
+                
                 float shakeMultiplier = normalizeDistance;
                 
-                currentSpeed = Mathf.Clamp(_scrollSpeed * brakeMultiplier, 3, _scrollSpeed); // TODO: extract "min" as a field or rework smooth formula
+                currentSpeed = ScrolledDistanceCurve.Evaluate(normalizeDistance);
                 _camNoise.m_AmplitudeGain = Mathf.Lerp(initialShakeAmplitude, 0, 1 - shakeMultiplier);
                 
                 MoveChunks(currentSpeed, Time.deltaTime);
@@ -163,7 +176,13 @@ namespace Game.Terrain
             BrakeVFX.SetActive(false);
             ConvoyTrails.SetActive(false);
             AudioManager.Instance.SwitchToStopZone(5f);
+        }
 
+        private float EaseOut(float t, float b, float c, float d)
+        {
+            t /= d;
+            t--;
+            return c * (t * t * t + 1) + b;
         }
         
         public void RestartTransit()
