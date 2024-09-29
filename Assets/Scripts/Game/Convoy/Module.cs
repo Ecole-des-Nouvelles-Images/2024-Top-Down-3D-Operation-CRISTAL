@@ -96,7 +96,6 @@ namespace Game.Convoy
 
             Controllers.Remove(currentController);
             currentController.IsBusy = false;
-            Debug.Log($"Exiting module {name}");
 
             if (BatteryMaxCapacity > 0)
             {

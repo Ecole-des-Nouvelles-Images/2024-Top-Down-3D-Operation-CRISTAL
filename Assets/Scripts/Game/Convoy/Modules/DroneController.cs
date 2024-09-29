@@ -39,7 +39,7 @@ namespace Game.Convoy.Modules
         private void Start()
         {
             if (_enableDroneAutoRebuild)
-                StartCoroutine(AutoRebuildDroneWatcher());
+                StartCoroutine(DroneAutoRebuildWatcher());
         }
 
         protected override void Update()
@@ -58,7 +58,7 @@ namespace Game.Convoy.Modules
         public override void Deactivate()
         {
             base.Deactivate();
-            StopCoroutine(AutoRebuildDroneWatcher());
+            StopCoroutine(DroneAutoRebuildWatcher());
         }
 
         #region Actions
@@ -105,10 +105,9 @@ namespace Game.Convoy.Modules
             if (!userDrone) 
                 userDrone = RegisterNewDrone(pilot);
 
-            if (!userDrone) // If userDrone still unasigned after registering;
+            if (!userDrone) // If userDrone still unassigned after registering;
                 return;
-
-            userDrone.GetComponent<MeshRenderer>().material.color = pilot.PlayerColor;
+            
             userDrone.Active = true;
         }
 
@@ -133,6 +132,7 @@ namespace Game.Convoy.Modules
             }
                 
             userDrone.RegisterPilot(pilot);
+            userDrone.MaterialInstance.color = pilot.PlayerColor;
             return userDrone;
         }
 
@@ -142,7 +142,7 @@ namespace Game.Convoy.Modules
                 throw new Exception($"Error: trying to remove a rogue drone. ID #{drone.ID} wasn't registered");
         }
 
-        private IEnumerator AutoRebuildDroneWatcher()
+        private IEnumerator DroneAutoRebuildWatcher()
         {
             while (Online)
             {

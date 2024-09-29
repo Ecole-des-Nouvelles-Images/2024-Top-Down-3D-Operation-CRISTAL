@@ -43,10 +43,12 @@ namespace Game.Convoy.Drones
         public GameObject GameObject => gameObject;
         public Transform Transform => transform;
 
+        [SerializeField] private GameObject _body;
         [Space(5), Header("VFX")]
-        [SerializeField] private ParticleSystem _psMinig;
-
+        [SerializeField] private ParticleSystem _psMining;
+        
         private Rigidbody _rigidbody;
+        [HideInInspector] public Material MaterialInstance;
         private bool _operating;
         private bool _interacting;
         private POI _nearestPOI;
@@ -65,6 +67,7 @@ namespace Game.Convoy.Drones
         private void Awake()
         {
             ID = ++TotalDroneBuilt;
+            MaterialInstance = _body.GetComponent<Renderer>().material;
             _rigidbody = GetComponent<Rigidbody>();
             _moveSpeed = DroneController.DroneMoveSpeed;
             _miningSpeed = DroneController.DroneMiningSpeed;
@@ -92,12 +95,16 @@ namespace Game.Convoy.Drones
             DroneController?.UnregisterDrone(this);
         }
 
+        private void OnDestroy()
+        {
+            Destroy(MaterialInstance);
+        }
+
         private void OnTriggerStay(Collider other)
         {
             if (!other.CompareTag("POI")) return;
 
             _nearestPOI = other.GetComponent<POI>();
-            Debug.Log($"Drone #{ID} near of POI: {_nearestPOI.name}");
         }
 
         private void OnTriggerExit(Collider other)
@@ -120,8 +127,9 @@ namespace Game.Convoy.Drones
         {
             Vector3 motion = new Vector3(input.x, 0, input.y) * (_moveSpeed * Time.deltaTime);
             _rigidbody.MovePosition(Transform.position + motion);
-            //if (_rigidbody.velocity.magnitude > 0.1f) {
-            transform.forward = new Vector3(input.x, 0, input.y);
+            
+            if (input.x != 0 || input.y != 0)
+                transform.forward = new Vector3(input.x, 0, input.y);
         }
         
         private void Operate()
@@ -175,9 +183,10 @@ namespace Game.Convoy.Drones
             }
         }
 
-        private void SetMiningVFX(bool value) {
-            ParticleSystem.EmissionModule em = _psMinig.emission;
-            em.enabled = value;
+        private void SetMiningVFX(bool value)
+        {
+            var emissionModule = _psMining.emission;
+            emissionModule.enabled = value;
         }
     }
 }
