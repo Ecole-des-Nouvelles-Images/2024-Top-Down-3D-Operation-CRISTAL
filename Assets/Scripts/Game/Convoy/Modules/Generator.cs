@@ -34,6 +34,7 @@ namespace Game.Convoy.Modules
             base.Awake();
             TargetModuleID = ConvoyManager.Modules.FindIndex(module => module.GetType() == this.GetType());
             _targetModule.WakeUIBattery(true);
+            _targetModule.ToggleChargeStatus(true);
         }
 
         private void FixedUpdate()

@@ -1965,7 +1965,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 5
       inSlope: 381.9646
       outSlope: 381.9646
       tangentMode: 0
@@ -1973,20 +1973,65 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.011406528
     - serializedVersion: 3
-      time: 0.09661743
-      value: 20
-      inSlope: -15.196339
-      outSlope: 158.38376
-      tangentMode: 1
+      time: 0.036887415
+      value: 14.532354
+      inSlope: 321.504
+      outSlope: 321.504
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.444528
-      outWeight: 0.072832935
+      inWeight: 0.31514868
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.10031167
+      value: 34.956043
+      inSlope: 249.07559
+      outSlope: 249.07559
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.19609375
+      value: 51.826538
+      inSlope: 140.7039
+      outSlope: 140.7039
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.29356295
+      value: 62.08748
+      inSlope: 89.12656
+      outSlope: 89.12656
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4
+      value: 70
+      inSlope: 49.669956
+      outSlope: 49.669956
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8
+      value: 80
+      inSlope: 3.932317
+      outSlope: 0
+      tangentMode: 65
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 80
-      inSlope: -3.2621067
-      outSlope: -0.18525398
-      tangentMode: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.20517094
