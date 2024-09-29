@@ -18,10 +18,14 @@ namespace Game.Convoy.Modules
 
         private void FixedUpdate()
         {
-            if ((!Online || BatteryCapacity <= 0) && IsActive)
+            if (!Online || BatteryCharge<= 0)
             {
+                if (BatteryCharge <= 0)
+                    BatteryDepletedWarn();
+                
                 BarrierLeft.SetActive(false);
                 BarrierRight.SetActive(false);
+                return;
             }
 
             if (IsActive)

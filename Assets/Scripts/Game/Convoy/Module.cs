@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using Game.Convoy.Drones;
 using Game.Player;
 using UnityEngine;
@@ -20,7 +21,7 @@ namespace Game.Convoy
 
         [Header("Interface")]
         [SerializeField] protected Slider BatteryGauge;
-        [SerializeField] protected Image ChargeStatus;
+        [SerializeField] public Image ChargeStatus;
         [SerializeField] protected Image ModuleIcon;
 
         public string Type => GetType().ToString();
@@ -141,6 +142,14 @@ namespace Game.Convoy
             Color indicatorColor = enable ? Color.white : Color.black;
             
             ChargeStatus.color = indicatorColor;
+        }
+
+        protected void BatteryDepletedWarn()
+        {
+            if (DOTween.IsTweening(ChargeStatus, true))
+                return;
+
+            ChargeStatus.DOColor(Color.red, .7f).SetLoops(-1, LoopType.Yoyo);
         }
 
         #endregion

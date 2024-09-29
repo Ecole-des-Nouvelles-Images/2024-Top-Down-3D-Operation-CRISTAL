@@ -1,4 +1,5 @@
 ﻿using System;
+using DG.Tweening;
 using Game.Player;
 using UnityEngine;
 
@@ -43,6 +44,13 @@ namespace Game.Convoy.Modules
             {
                 _targetModule.BatteryCharge += PowerOutput * Time.fixedDeltaTime;
                 _targetModule.BatteryCharge = Mathf.Clamp(_targetModule.BatteryCharge, 0, _targetModule.BatteryMaxCapacity);
+
+                if (DOTween.IsTweening(_targetModule.ChargeStatus, true))
+                {
+                    DOTween.Kill(_targetModule.ChargeStatus);
+                    _targetModule.ToggleChargeStatus(true);
+                }
+                    
                 _targetModule.UpdateUIBatteryCharge();
             }
         }

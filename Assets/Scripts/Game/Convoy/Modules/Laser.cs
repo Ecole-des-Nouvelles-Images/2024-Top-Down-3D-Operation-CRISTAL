@@ -71,6 +71,7 @@ namespace Game.Convoy.Modules
             if (!Online) return;
             
             if (BatteryCharge <= 0) {
+                BatteryDepletedWarn();
                 _firing = false;
                 BeamRenderer.Disable();
                 return;
