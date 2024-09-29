@@ -44,6 +44,17 @@ namespace Game.Convoy.Modules
                 Debug.DrawLine(Canon.position, sphereCastMidpoint, Color.red);
             }
         }
+        
+        /* private void DrawLaser()
+        {
+            if (_range <= 0) {
+                Debug.LogWarning("Range must be greater than 0");
+                return;
+            }
+
+            Vector3 endPoint = _canon.position + _canon.forward * _range;
+            Debug.DrawLine(_canon.position, endPoint, Color.red, Time.deltaTime);
+        } */
 
         #endregion
         
@@ -61,6 +72,7 @@ namespace Game.Convoy.Modules
             
             if (BatteryCharge <= 0) {
                 _firing = false;
+                BeamRenderer.Disable();
                 return;
             }
 
@@ -130,21 +142,6 @@ namespace Game.Convoy.Modules
             
             return base.ExitModule(currentController);
         }
-
-        #endregion
-
-        #region Debug
-
-        /* private void DrawLaser()
-        {
-            if (_range <= 0) {
-                Debug.LogWarning("Range must be greater than 0");
-                return;
-            }
-            
-            Vector3 endPoint = _canon.position + _canon.forward * _range;
-            Debug.DrawLine(_canon.position, endPoint, Color.red, Time.deltaTime);
-        } */
 
         #endregion
     }
