@@ -130,16 +130,16 @@ namespace Game.Player
             switch (PlayerID)
             {
                 case 1:
-                    PlayerColor = new Color(197 / 255f, 32 / 255f, 38 / 255f);
+                    PlayerColor = new Color(237 / 255f, 69 / 255f, 178 / 255f);
                     break;
                 case 2:
-                    PlayerColor = new Color(56 / 255f, 77 / 255f, 161 / 255f);
+                    PlayerColor = new Color(0 / 255f, 203 / 255f, 255 / 255f);
                     break;
                 case 3:
                     PlayerColor = new Color(246 / 255f, 237 / 255f, 97 / 255f);
                     break;
                 case 4:
-                    PlayerColor = new Color(102 / 255f, 71 / 255f, 156 / 255f);
+                    PlayerColor = new Color(159 / 255f, 2 / 255f, 255 / 255f);
                     break;
             }
             
