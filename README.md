@@ -14,14 +14,33 @@
 
 # Opération C.R.I.S.T.A.L.
 
-**A local multiplayer game in 3D about crystals, engineers, a train and weird aliens**
+**A local multiplayer game in 3D about crystals, engineers, a train and weird aliens**.
+
+Embark as a engineer with up to 3 of your peers inside a state-of-the-art convoy designed to provide you tools to gather precious crystals for a very legitimate research corporation.<br>
+Coordinates with your collegues to manage the convoy's technology and don't let anyone or -- **anything** -- hinder your extraction !
 <br></br>
 
-## Concept
+## Introduction
 
 <p align="center">
     <img src="../integration/Recordings/Image%20Sequence_T006_F0000.jpg" width="60%" height="auto">
 </p>
 
-Embark as a engineer with up to 3 of your peers inside a state-of-the-art convoy designed to provide you tools to extract precious crystals for a very legitimate research corporation.<br>
-Coordinates with your collegues to manage the convoy's power in order to defend it against a weird fauna : the Xenoliths.
+Opération C.R.I.S.T.A.L. is born in 2023 as a student project from the <a href="https://www.nouvellesimages.xyz/jeuvideo?lang=en">*Ecole des Nouvelles Images*</a>.<br>
+It was originally a month-and-half based project from pre-production to release but it continues to receive some love here and there.
+
+## Gameplay
+
+Expect some laser-aiming, well-timed shields, a hint of power management and most of all, a lot of coordination !
+
+> [!WARNING]  
+> Missing gameplay video
+<br></br>
+
+## The Team
+
+<p align="center" dir="auto">
+    <a href="https://github.com/Aleyria"><img align="left" src="../main/Assets/Assets/UI/chibicam.png" width="15%" height="auto"></a> Camilia FILHON
+    <a href="https://github.com/Cyrielle-E"><img align="center" src="../main/Assets/Assets/UI/chibicyrielle.png" width="15%" height="auto"></a>
+    <a href="https://github.com/charlieBoyer"><img align="right" src="../main/Assets/Assets/UI/chibicharlie.png" width="15%" height="auto"></a>
+</p>
