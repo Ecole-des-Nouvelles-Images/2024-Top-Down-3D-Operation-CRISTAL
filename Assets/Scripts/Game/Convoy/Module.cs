@@ -40,9 +40,12 @@ namespace Game.Convoy
             }
         }
         protected bool IsOperated => Controllers.Count > 0;
+
+        private List<Material> _instanceMaterials;
         
         protected virtual void Awake()
         {
+            _instanceMaterials = GetModuleInstanceMaterials();
             Convoy = FindAnyObjectByType<ConvoyManager>();
             Online = true;
             BatteryCharge = BatteryCapacity;
@@ -84,8 +87,10 @@ namespace Game.Convoy
 
             if (MaximumControllers == 1)
             {
-                BatteryGauge.transform.Find("Fill Area/Fill").GetComponent<Image>().color = newController.PlayerColor;
-                ModuleIcon.color = newController.PlayerColor;
+                foreach (Material mat in _instanceMaterials)
+                {
+                    mat.color = newController.PlayerColor;
+                }
             }
             
             newController.Cheatsheet.GetComponent<Cheatsheet>().ChangeCheatsheet(this);
@@ -107,8 +112,10 @@ namespace Game.Convoy
                 ModuleIcon.gameObject.SetActive(true);
             }
             
-            BatteryGauge.transform.Find("Fill Area/Fill").GetComponent<Image>().color = Color.white;
-            ModuleIcon.color = Color.white;
+            foreach (Material mat in _instanceMaterials)
+            {
+                mat.color = Color.white;
+            }
             
             currentController.Cheatsheet.GetComponent<Cheatsheet>().ChangeToDefaultCheatsheet();
             
@@ -171,5 +178,20 @@ namespace Game.Convoy
         }
         
         #endregion
+
+        private List<Material> GetModuleInstanceMaterials()
+        {
+            List<Material> materials = new (GetComponent<Renderer>().materials.ToList());
+            List<Material> bodyMaterials = new();
+
+            foreach (Material mat in materials)
+            {
+                if (mat.name.Contains("Top") || mat.name.Contains("Glass")) continue;
+                
+                bodyMaterials.Add(mat);
+            }
+            
+            return bodyMaterials;
+        }
     }
 }
