@@ -29,6 +29,8 @@ namespace Game.Player
         
         public GameObject ReadyPanel { get; set; }
 
+        public Cheatsheet Cheatsheet;
+
         private void Awake()
         {
             PlayerID = PlayerManager.Instance.PlayerNumber;
@@ -40,6 +42,8 @@ namespace Game.Player
         private void Start()
         {
             transform.position = ConvoyManager.Modules[0].transform.position;
+
+            Cheatsheet.Init(PlayerID, PlayerColor);
         }
 
         private void Update()

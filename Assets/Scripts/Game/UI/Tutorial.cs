@@ -49,12 +49,12 @@ namespace Game.UI
                 return;
             }
             
-            if (_mainGamepad.buttonSouth.wasPressedThisFrame && !_coroutineRunning) {
+            if (_mainGamepad.buttonSouth.wasPressedThisFrame && !_coroutineRunning && !GameManager.Instance.IsInPause) {
                 _tutorialIndex++;
                 ProgressTutorial();
             }
 
-            if (_mainGamepad.buttonEast.wasPressedThisFrame && !_coroutineRunning)
+            if (_mainGamepad.buttonEast.wasPressedThisFrame && !_coroutineRunning && !GameManager.Instance.IsInPause)
             {
                 StartCoroutine(EndTutorial());
             }
@@ -128,7 +128,9 @@ namespace Game.UI
         
         private IEnumerator EndTutorial()
         {
+            _coroutineRunning = true;
             Debug.Log("Tutorial ending...");
+            
             float t = 0f;
             float initVolume = _music.volume;
 
@@ -154,6 +156,7 @@ namespace Game.UI
             _music.Stop();
             AudioManager.Instance.gameObject.SetActive(true);
             gameObject.SetActive(false);
+            _coroutineRunning = false;
         }
     }
 }

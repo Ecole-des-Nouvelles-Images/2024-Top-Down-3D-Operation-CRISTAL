@@ -8,6 +8,12 @@ namespace Game.Player
 {
     public class PlayerManager: SingletonMonoBehaviour<PlayerManager>
     {
+        [Header("Cheatsheet")]
+        [SerializeField] private GameObject _playerCheatsheetBase;
+        [SerializeField] private GameObject _cheatsheetContainer;
+        
+        
+        [Header("Settings")]
         [HideInInspector] public int PlayerNumber;
         // public List<Transform> PlayerOriginPositions;
 
@@ -21,9 +27,12 @@ namespace Game.Player
 
         public void OnPlayerJoined(PlayerInput player)
         {
+            PlayerController controller = player.gameObject.GetComponent<PlayerController>();
+            
             ++PlayerNumber;
             _convoyHead.UpdateMaximumControllers(PlayerNumber);
             GameManager.Instance.AddPlayerReadyIcon(player, PlayerNumber);
+            controller.Cheatsheet = Instantiate(_playerCheatsheetBase, _cheatsheetContainer.transform).GetComponent<Cheatsheet>();
         }
 
         public void OnPlayerLeft(PlayerInput player)
