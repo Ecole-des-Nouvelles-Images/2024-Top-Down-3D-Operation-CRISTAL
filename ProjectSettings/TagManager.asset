@@ -8,6 +8,7 @@ TagManager:
   - POI
   - Convoy
   - Drone
+  - RecordCam
   layers:
   - Default
   - TransparentFX
