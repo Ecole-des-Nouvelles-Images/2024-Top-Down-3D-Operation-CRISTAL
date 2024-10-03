@@ -7,7 +7,7 @@
     <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases/tag/v0.4.2"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard"></a>
     <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases/tag/v0.4.2"><img alt="GitHub Release Date" src="https://img.shields.io/github/release-date-pre/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard"></a>
     <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard?tab=Apache-2.0-1-ov-file"><img alt="GitHub License" src="https://img.shields.io/github/license/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard"></a>
-    <a href="/#"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard?color=lightgrey"></a>
+    <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/blob/main/README.md"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard?color=lightgrey"></a>
 </p>
 
 <br></br>
