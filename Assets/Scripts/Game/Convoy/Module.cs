@@ -88,6 +88,8 @@ namespace Game.Convoy
                 ModuleIcon.color = newController.PlayerColor;
             }
             
+            newController.Cheatsheet.GetComponent<Cheatsheet>().ChangeCheatsheet(this);
+            
             return true;
         }
 
@@ -107,6 +109,8 @@ namespace Game.Convoy
             
             BatteryGauge.transform.Find("Fill Area/Fill").GetComponent<Image>().color = Color.white;
             ModuleIcon.color = Color.white;
+            
+            currentController.Cheatsheet.GetComponent<Cheatsheet>().ChangeToDefaultCheatsheet();
             
             return true;
         }
