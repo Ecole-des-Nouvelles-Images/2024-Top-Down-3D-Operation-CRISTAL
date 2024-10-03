@@ -6,7 +6,7 @@
     <img alt="Static Badge" src="https://img.shields.io/badge/Unity-2022.3.47-blue?style=flat&logo=unity">
     <img alt="GitHub Release" src="https://img.shields.io/github/v/release/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard">
     <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date-pre/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard">
+    <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard?tab=Apache-2.0-1-ov-file"><img alt="GitHub License" src="https://img.shields.io/github/license/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard"></a>
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard?color=lightgrey">
 </p>
 
@@ -20,7 +20,7 @@
 ## Concept
 
 <p align="center">
-    <img src="../integration/Recordings/Image%20Sequence_T006_F0000.jpg" width="80%" height="auto">
+    <img src="../integration/Recordings/Image%20Sequence_T006_F0000.jpg" width="60%" height="auto">
 </p>
 
 Embark as a engineer with up to 3 of your peers inside a state-of-the-art convoy designed to provide you tools to extract precious crystals for a very legitimate research corporation.<br>
