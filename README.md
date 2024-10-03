@@ -14,3 +14,14 @@
 
 # Opération C.R.I.S.T.A.L.
 
+**A local multiplayer game in 3D about crystals, engineers, a train and weird aliens**
+<br></br>
+
+## Concept
+
+<p align="center">
+    <img src="../integration/Recordings/Image%20Sequence_T006_F0000.jpg" width="80%" height="auto">
+</p>
+
+Embark as a engineer with up to 3 of your peers inside a state-of-the-art convoy designed to provide you tools to extract precious crystals for a very legitimate research corporation.<br>
+Coordinates with your collegues to manage the convoy's power in order to defend it against a weird fauna : the Xenoliths.
