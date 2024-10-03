@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE sesx>
+<sesx version="1.9">
+
+  <session appBuild="24.2.0.83" appVersion="24.2" audioChannelType="stereo" bitDepth="32" duration="1440000" sampleRate="48000">
+    <tracks>
+      <audioTrack automationLaneOpenState="false" id="10001" index="1" select="true" visible="true">
+        <trackParameters trackHeight="134" trackHue="160" trackMinimized="false">
+          <name>Piste 1</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="72a0e1b7-199f-495c-b6e9-00904cfec565" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="8177df41-59bd-4e9f-a50d-80505b5b36e6" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="7beeea6e-87ed-41c0-a6e7-6752c5cb3c13" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="8b35a210-7220-4ce0-a50b-6a35c8d892f8" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10002" index="2" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="267" trackMinimized="false">
+          <name>Piste 2</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="4def7495-0c73-471b-b84b-8a97a66c654e" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="b86787a2-86e7-4b3c-8c63-abf97d0e5d56" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="d0c65cc0-82b2-4724-b9e1-f6423e798568" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="64caace9-33a1-4986-8767-63c521d98795" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10003" index="3" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="51" trackMinimized="false">
+          <name>Piste 3</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="4ac108eb-13dc-42f2-a29d-f290c1db3c78" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="3f7319e1-2e2e-4a86-8cba-af40079447fd" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="3ab99035-e73d-4a98-ae9b-10734f6d8784" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="81cd14d6-477b-41ef-af2b-c0ea76a86de5" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10004" index="4" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="182" trackMinimized="false">
+          <name>Piste 4</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="4bccfaaa-e90a-4389-b203-873e8583d90a" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="7c40631b-15d1-4748-bea4-ccfcbd2950ec" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="6345a0ff-d276-4820-9881-55cfcfdac769" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="b725fe47-99ec-4c9e-a8f8-975c94c5cd2b" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10005" index="5" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="294" trackMinimized="false">
+          <name>Piste 5</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="eb6d1525-3041-4d55-b31c-3cd5e2242139" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="7ec177c8-f905-47ee-adba-d4510e30d290" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="7ecdb9c6-6983-4b86-9bae-b68094a7d0ba" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="3914b616-afb6-4a77-9e76-1423ddd39bb0" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <audioTrack automationLaneOpenState="false" id="10006" index="6" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="92" trackMinimized="false">
+          <name>Piste 6</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="false">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="1"/>
+          <component componentGuid="f95f7d6a-1f35-415f-824d-f762a5a13988" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="efa7192c-e53e-40dc-bd3f-6e713bb663ed" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="b52ac8a7-3c44-4e32-8ac5-0d66da13c1b3" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="ef1db8dd-b3d2-4fcd-8312-19118a718b61" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </audioTrack>
+      <masterTrack automationLaneOpenState="false" id="10000" index="7" select="false" visible="true">
+        <trackParameters trackHeight="134" trackHue="-1" trackMinimized="false">
+          <name>Mixage</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="stereo" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="1" type="hardwareOutput"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="59e4bc22-22bd-4ddb-a982-db1eb5386988" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="1"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="5c6f0446-45d5-40cf-b1ae-ed450b872e2f" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="d8703eee-3b0b-4076-a666-64ee3448ea5c" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="7b071991-ecbe-4af5-8742-88d2cb322612" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </masterTrack>
+    </tracks>
+    <sessionState ctiPosition="0" smpteStart="0">
+      <selectionState selectionDuration="0" selectionStart="0"/>
+      <viewState horizontalViewDuration="0" horizontalViewStart="0" trackControlsWidth="0" verticalScrollOffset="0"/>
+      <timeFormatState beatsPerBar="0" beatsPerMinute="0" customFrameRate="0" linkToDefaultTimeSettings="false" noteLength="0" subdivisions="0" timeCodeDropFrame="false" timeCodeFrameRate="0" timeCodeNTSC="false" timeFormat="timeFormatDecimal"/>
+      <mixingOptionState defaultPanModeLogarithmic="false" panPower="-3" playOverlappingClips="false"/>
+    </sessionState>
+    <xmpMetadata><![CDATA[<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 9.0-c001 79.c0204b2, 2023/02/09-06:26:14        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <xmp:CreatorTool>Adobe Audition 24.2 (Windows)</xmp:CreatorTool>
+         <xmp:CreateDate>2024-06-07T01:39:58+02:00</xmp:CreateDate>
+         <xmp:MetadataDate>2024-06-07T01:39:59+02:00</xmp:MetadataDate>
+         <xmpDM:Tracks>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CuePoint Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Cue</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>CD Track Markers</xmpDM:trackName>
+                  <xmpDM:trackType>Track</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <xmpDM:trackName>Subclip Markers</xmpDM:trackName>
+                  <xmpDM:trackType>InOut</xmpDM:trackType>
+                  <xmpDM:frameRate>f48000</xmpDM:frameRate>
+               </rdf:li>
+            </rdf:Bag>
+         </xmpDM:Tracks>
+         <xmpMM:InstanceID>xmp.iid:a3862332-c715-0d4c-809a-ef859127484e</xmpMM:InstanceID>
+         <xmpMM:DocumentID>xmp.did:ecb3135a-399a-a54b-8886-dbe483e2e4e7</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:ecb3135a-399a-a54b-8886-dbe483e2e4e7</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:ecb3135a-399a-a54b-8886-dbe483e2e4e7</stEvt:instanceID>
+                  <stEvt:when>2024-06-07T01:39:59+02:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 24.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:a3862332-c715-0d4c-809a-ef859127484e</stEvt:instanceID>
+                  <stEvt:when>2024-06-07T01:39:59+02:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Audition 24.2 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/metadata</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <dc:format>application/xml</dc:format>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>]]></xmpMetadata>
+    <clipGroups/>
+    <metronome enabled="false" pattern="downBeat subdivision subdivision subdivision " soundSet="sticks">
+      <metronomeTrack automationLaneOpenState="false" id="40000" index="0" select="false" visible="false">
+        <trackParameters trackHeight="77" trackHue="-1" trackMinimized="false">
+          <name>Métronome</name>
+        </trackParameters>
+        <trackAudioParameters audioChannelType="mono" automationMode="1" monitoring="false" recordArmed="false" solo="false" soloSafe="true">
+          <trackOutput outputID="10000" type="trackID"/>
+          <trackInput inputID="-1"/>
+          <component componentGuid="abdbe4fd-4f87-4625-b6a9-5166b62ad8b6" componentID="Audition.Fader" id="trackFader" name="volume" powered="true">
+            <parameter index="0" name="volume" parameterValue="0.50118720531463623046875"/>
+            <parameter index="1" name="static gain" parameterValue="1"/>
+          </component>
+          <component componentGuid="669849a7-45b5-439e-9b33-b49a6887d704" componentID="Audition.Mute" id="trackMute" name="Mute" powered="true">
+            <parameter index="0" parameterValue="0"/>
+            <parameter index="1" name="mute" parameterValue="0"/>
+          </component>
+          <component componentGuid="198dc294-b685-4b10-b61a-04ed8296b414" componentID="Audition.StereoPanner" id="trackPan" name="StereoPanner" powered="true">
+            <parameter index="0" name="Panoramique" parameterValue="0"/>
+          </component>
+          <component componentGuid="7622d0e1-14ec-49bc-9ac8-322400dcb1fa" componentID="Audition.EQ" id="trackEQ" name="EQ" powered="false">
+            <parameter index="0" name="Fréquence papillon grave" parameterValue="0.000834028352983295917510986328125"/>
+            <parameter index="1" name="Gain papillon grave" parameterValue="0.5"/>
+            <parameter index="2" name="Fréquence papillon aigu" parameterValue="0.74979150295257568359375"/>
+            <parameter index="3" name="Gain papillon aigu" parameterValue="0.5"/>
+            <parameter index="4" name="Bande d’égaliseur 1 – Fréquence centrale" parameterValue="0.00125104258768260478973388671875"/>
+            <parameter index="5" name="Bande d’égaliseur 1 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="6" name="Bande d’égaliseur 1 – Gain" parameterValue="0.5"/>
+            <parameter index="7" name="Bande d’égaliseur 1 – Activation" parameterValue="1"/>
+            <parameter index="8" name="Bande d’égaliseur 2 – Fréquence centrale" parameterValue="0.0075062550604343414306640625"/>
+            <parameter index="9" name="Bande d’égaliseur 2 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="10" name="Bande d’égaliseur 2 – Gain" parameterValue="0.5"/>
+            <parameter index="11" name="Bande d’égaliseur 2 – Activation" parameterValue="1"/>
+            <parameter index="12" name="Bande d’égaliseur 3 – Fréquence centrale" parameterValue="0.0325271077454090118408203125"/>
+            <parameter index="13" name="Bande d’égaliseur 3 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="14" name="Bande d’égaliseur 3 – Gain" parameterValue="0.5"/>
+            <parameter index="15" name="Bande d’égaliseur 3 – Activation" parameterValue="1"/>
+            <parameter index="16" name="Bande d’égaliseur 4 – Fréquence centrale" parameterValue="0.13261051476001739501953125"/>
+            <parameter index="17" name="Bande d’égaliseur 4 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="18" name="Bande d’égaliseur 4 – Gain" parameterValue="0.5"/>
+            <parameter index="19" name="Bande d’égaliseur 4 – Activation" parameterValue="1"/>
+            <parameter index="20" name="Bande d’égaliseur 5 – Fréquence centrale" parameterValue="0.532944142818450927734375"/>
+            <parameter index="21" name="Bande d’égaliseur 5 – Facteur Q" parameterValue="0.000199989997781813144683837890625"/>
+            <parameter index="22" name="Bande d’égaliseur 5 – Gain" parameterValue="0.5"/>
+            <parameter index="23" name="Bande d’égaliseur 5 – Activation" parameterValue="1"/>
+            <parameter index="24" name="Gain" parameterValue="0.666666686534881591796875"/>
+            <parameter index="25" name="Q constant" parameterValue="1"/>
+            <parameter index="26" name="Ordre de filtre coupe-bas" parameterValue="0"/>
+            <parameter index="27" name="Ordre de filtre coupe-haut" parameterValue="0"/>
+            <parameter index="28" name="Mode ultra-silencieux" parameterValue="0"/>
+            <parameter index="29" name="Filtre low-shelf activé" parameterValue="1"/>
+            <parameter index="30" name="Filtre high-shelf activé" parameterValue="1"/>
+            <parameter index="31" name="Taux d’échantillonnage d’origine" parameterValue="0.25"/>
+            <parameter index="32" name="Bande d’égaliseur 1 – Largeur de bande" parameterValue="0.002499990165233612060546875"/>
+            <parameter index="33" name="Bande d’égaliseur 2 – Largeur de bande" parameterValue="0.0099999904632568359375"/>
+            <parameter index="34" name="Bande d’égaliseur 3 – Largeur de bande" parameterValue="0.0399999916553497314453125"/>
+            <parameter index="35" name="Bande d’égaliseur 4 – Largeur de bande" parameterValue="0.15999998152256011962890625"/>
+            <parameter index="36" name="Bande d’égaliseur 5 – Largeur de bande" parameterValue="0.63999998569488525390625"/>
+            <parameter index="37" name="Filtre passe-haut – Activation" parameterValue="0"/>
+            <parameter index="38" name="Fréquence coupure passe-haut" parameterValue="0"/>
+            <parameter index="39" name="Pente passe-haut" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="40" name="Filtre passe-bas – Activation" parameterValue="0"/>
+            <parameter index="41" name="Fréquence coupure passe-bas" parameterValue="0.833194315433502197265625"/>
+            <parameter index="42" name="Pente passe-bas" parameterValue="0.4000000059604644775390625"/>
+            <parameter index="43" name="Ignorer" parameterValue="0"/>
+            <parameter index="44" name="Plage graphique basse" parameterValue="1"/>
+          </component>
+        </trackAudioParameters>
+        <editParameter parameterIndex="0" slotIndex="4294967280"/>
+      </metronomeTrack>
+    </metronome>
+    <properties/>
+  </session>
+
+  <files/>
+
+  <audioDevice inputID="22222222-2222-2222-2222-22222222" outputID="11111111-1111-1111-1111-11111111">
+    <inputPort id="1" name="Entrée stéréo par défaut"/>
+    <inputPort id="2" name="[01M] Valeur par défaut du système - External Microphone Headphone (Shadow Virtual Audio Device) 1"/>
+    <inputPort id="3" name="[02M] Valeur par défaut du système - External Microphone Headphone (Shadow Virtual Audio Device) 2"/>
+    <inputPort id="4" name="[01S] Valeur par défaut du système - External Microphone Headphone (Shadow Virtual Audio Device) 1"/>
+    <outputPort id="1" name="Sortie par défaut"/>
+    <outputPort id="2" name="[01M] Valeur par défaut du système - DigitalOutput (NVIDIA High Definition Audio) 1"/>
+    <outputPort id="3" name="[02M] Valeur par défaut du système - DigitalOutput (NVIDIA High Definition Audio) 2"/>
+    <outputPort id="4" name="Sortie stéréo par défaut"/>
+    <outputPort id="5" name="[01S] Valeur par défaut du système - DigitalOutput (NVIDIA High Definition Audio) 1"/>
+    <outputPort id="6" name="Sortie Surround par défaut"/>
+  </audioDevice>
+
+</sesx>
