@@ -9,6 +9,7 @@ using Internal;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Game
 {
@@ -28,6 +29,7 @@ namespace Game
 
         [Header("UI")]
         public GameObject PauseUI;
+        public Button PauseUIContinue;
         public GameObject StartPanel;
         public GameObject InfoBox;
         public GameObject PlayerReadyIconPrefab;
@@ -89,6 +91,7 @@ namespace Game
             IsInPause = enable;
             Time.timeScale = enable ? 0 : 1;
             PauseUI.SetActive(enable);
+            PauseUIContinue.Select();
         }
 
         public void ShowInfoBox()
@@ -105,7 +108,6 @@ namespace Game
             playerPanel.GetComponentInChildren<TMP_Text>().text = "J" + playerID;
             
             controller.ReadyPanel = playerPanel;
-            
         }
 
         #endregion
