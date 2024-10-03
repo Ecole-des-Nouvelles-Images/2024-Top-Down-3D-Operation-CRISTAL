@@ -14,6 +14,9 @@ namespace Game
 {
     public class GameManager : SingletonMonoBehaviour<GameManager>
     {
+        public static bool InTutorial = true;
+        public static bool AsStartedOnce = false;
+        
         public int Crystals { get; set; }
 
         [Header("References")]

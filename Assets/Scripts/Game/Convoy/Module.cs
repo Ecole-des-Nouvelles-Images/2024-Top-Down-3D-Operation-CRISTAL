@@ -69,6 +69,8 @@ namespace Game.Convoy
 
         public virtual bool EnterModule(PlayerController newController)
         {
+            if (GameManager.InTutorial) return false;
+            
             if (!Online || IsFull || Controllers.Contains(newController))
                 return false;
 

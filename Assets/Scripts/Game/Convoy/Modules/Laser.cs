@@ -130,6 +130,11 @@ namespace Game.Convoy.Modules
             _firing = !_firing;
         }
 
+        public override void Interact(PlayerController currentController)
+        {
+            Operate(currentController);
+        }
+
         public override void Aim(InputValue input)
         {
             Vector2 value = input.Get<Vector2>();

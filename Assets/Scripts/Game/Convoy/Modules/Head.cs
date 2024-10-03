@@ -19,26 +19,34 @@ namespace Game.Convoy.Modules
 
             base.EnterModule(newController);
                 
-            newController.ReadyPanel.GetComponentInChildren<Image>().color = Color.green;
-            
-            if (Controllers.Count == MaximumControllers)
-            {
-                if (GameManager.Instance.IsInTransit)
-                    GameManager.Instance.OnStopTransit.Invoke();
-                else if (!GameManager.Instance.IsInTransit)
-                    GameManager.Instance.OnStartTransit.Invoke();
+            if (!GameManager.AsStartedOnce) 
+                newController.ReadyPanel.GetComponentInChildren<Image>().color = Color.green;
 
-                Deactivate();
-                Online = true;
-                InteractionReady = false;
+            if (Controllers.Count != MaximumControllers) return true;
+            
+            switch (GameManager.Instance.IsInTransit)
+            {
+                case true:
+                    GameManager.Instance.OnStopTransit.Invoke();
+                    GameManager.AsStartedOnce = true;
+                    break;
+                case false:
+                    GameManager.Instance.OnStartTransit.Invoke();
+                    break;
             }
+
+            Deactivate();
+            Online = true;
+            InteractionReady = false;
 
             return true;
         }
 
         public override bool ExitModule(PlayerController currentController)
         {
-            currentController.ReadyPanel.GetComponentInChildren<Image>().color = Color.red;
+            if (!GameManager.AsStartedOnce)
+                currentController.ReadyPanel.GetComponentInChildren<Image>().color = Color.red;
+            
             return base.ExitModule(currentController);
         }
 

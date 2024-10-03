@@ -35,7 +35,7 @@ namespace Game
         [Header("Parameters")]
         public float TransitionDuration = 3f;
 
-        private void Start()
+        private void OnEnable()
         {
             Volume = MusicVolume.value;
             MusicSourceTransit.clip = TransitClip;
@@ -178,5 +178,11 @@ namespace Game
         }
         
         #endregion
+
+        public void ChangeClip(AudioClip clip)
+        {
+            MusicSourceTransit.clip = clip;
+            MusicSourceTransit.Play();
+        }
     }
 }

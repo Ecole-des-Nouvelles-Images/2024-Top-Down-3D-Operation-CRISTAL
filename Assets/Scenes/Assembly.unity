@@ -264,11 +264,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 3565120517603592724, guid: b726c90f489276e4297f3082cc69e708,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4049023306790107500, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -394,10 +389,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1911475621}
+    - target: {fileID: 9025955851171546234, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 31
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2137859893446155494, guid: b726c90f489276e4297f3082cc69e708, type: 3}
-    - {fileID: 2861825596375171994, guid: b726c90f489276e4297f3082cc69e708, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b726c90f489276e4297f3082cc69e708, type: 3}
