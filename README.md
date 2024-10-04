@@ -47,9 +47,9 @@ Expect some laser-aiming, well-timed shields, a hint of power management and mos
         <td align="center"><a href="https://github.com/charlieBoyer"><img align="center" src="../main/Assets/Assets/UI/chibicharlie.png" width="40%" height="auto"></a></td>
     </tr>
     <tr>
-        <td align="center"><a href="https://github.com/Aleyria"><span>**Camilia FILHON**</span></a></td>
-        <td align="center"><a href="https://github.com/Cyrielle-E"><span>**Cyrielle ESCHALIER**</span></a></td>
-        <td align="center"><a href="https://github.com/charlieBoyer"><span>**Charlie BOYER**</span></a></td>
+        <td align="center"><a href="https://github.com/Aleyria"><span>Camilia FILHON</span></a></td>
+        <td align="center"><a href="https://github.com/Cyrielle-E"><span>Cyrielle ESCHALIER</span></a></td>
+        <td align="center"><a href="https://github.com/charlieBoyer"><span>Charlie BOYER</span></a></td>
     </tr>
   </tbody>
 </table>
