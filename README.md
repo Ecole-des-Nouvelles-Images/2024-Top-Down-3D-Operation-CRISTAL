@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="../integration/Assets/Assets/UI/GameLogo.png" alt="Game Logo" width="200" height="200"/>
+    <img src="../main/Assets/Assets/UI/GameLogo.png" alt="Game Logo" width="200" height="200"/>
 </p>
 
 <p align="center" dir="auto">
@@ -23,7 +23,7 @@ Coordinates with your collegues to manage the convoy's technology and don't let 
 ## Introduction
 
 <p align="center">
-    <img src="../integration/Recordings/Image%20Sequence_T006_F0000.jpg" width="60%" height="auto">
+    <img src="../main/Recordings/Sequence_T006_F0000.jpg" width="60%" height="auto">
 </p>
 
 Opération C.R.I.S.T.A.L. is born in 2023 as a student project from the <a href="https://www.nouvellesimages.xyz/jeuvideo?lang=en">*Ecole des Nouvelles Images*</a>.<br>
@@ -43,4 +43,25 @@ Expect some laser-aiming, well-timed shields, a hint of power management and mos
     <a href="https://github.com/Aleyria"><img align="left" src="../main/Assets/Assets/UI/chibicam.png" width="15%" height="auto"></a>
     <a href="https://github.com/Cyrielle-E"><img align="center" src="../main/Assets/Assets/UI/chibicyrielle.png" width="15%" height="auto"></a>
     <a href="https://github.com/charlieBoyer"><img align="right" src="../main/Assets/Assets/UI/chibicharlie.png" width="15%" height="auto"></a>
+</p> 
+<p align="center" dir="auto">
+    <a align="left" href="https://github.com/Aleyria"><span>**Camilia FILHON**</span></a>
+    <a align="center" href="https://github.com/Cyrielle-E"><span>**Cyrielle ESCHALIER**</span></a>
+    <a align="right" href="https://github.com/charlieBoyer"><span>**Charlie BOYER**</span></a>                                                    
 </p>
+
+<table>
+  <tbody>
+    <tr>
+        <td align="center"><a href="https://github.com/Aleyria"><img src="../main/Assets/Assets/UI/chibicam.png" width="40%" height="auto"></a></td>
+        <td align="center"><a href="https://github.com/Cyrielle-E"><img align="center" src="../main/Assets/Assets/UI/chibicyrielle.png" width="40%" height="auto"></a></td>
+        <td align="center"><a href="https://github.com/charlieBoyer"><img align="center" src="../main/Assets/Assets/UI/chibicharlie.png" width="40%" height="auto"></a></td>
+    </tr>
+    <tr>
+        <td align="center"><a href="https://github.com/Aleyria"><span>**Camilia FILHON**</span></a></td>
+        <td align="center"><a href="https://github.com/Cyrielle-E"><span>**Cyrielle ESCHALIER**</span></a></td>
+        <td align="center"><a href="https://github.com/charlieBoyer"><span>**Charlie BOYER**</span></a></td>
+    </tr>
+  </tbody>
+</table>
+
