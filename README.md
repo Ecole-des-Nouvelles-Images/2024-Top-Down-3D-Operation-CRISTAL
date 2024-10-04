@@ -66,7 +66,7 @@ Expect some laser-aiming, well-timed shields, a hint of power management and mos
 ## Installation
 
 This game doesn't require anything in particular.</br>
-You can install the latest version of ***Opération C.R.I.S.T.A.L.*** by clicking this badge  <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases/latest/download/Operation.CRISTAL.v0.4.2.zip "><img alt="Static Badge" src="https://img.shields.io/badge/Download-.zip-%20%23510ED8?style=plastic"></a></br>
+You can install the latest version of ***Opération C.R.I.S.T.A.L.*** by clicking this following badge:  <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases/latest/download/Operation.CRISTAL.v0.4.2.zip "><img alt="Static Badge" src="https://img.shields.io/badge/Download-.zip-%20%23510ED8?style=plastic"></a></br>
 Alternatively you can go to the <a href="">release page</a> and download any version of your choice.
 
 Extract the .zip archive preferably somewhere under your user folder and launch the game with the provided .exe file
