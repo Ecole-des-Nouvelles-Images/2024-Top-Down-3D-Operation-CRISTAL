@@ -23,7 +23,7 @@ Coordinates with your collegues to manage the convoy's technology and don't let 
 ## Introduction
 
 <p align="center">
-    <img src="../main/Recordings/Sequence_T006_F0000.jpg" width="60%" height="auto">
+    <img src="../main/Recordings/Sequence_002_0000.jpg" width="80%" height="auto">
 </p>
 
 Opération C.R.I.S.T.A.L. is born in 2023 as a student project from the <a href="https://www.nouvellesimages.xyz/jeuvideo?lang=en">*Ecole des Nouvelles Images*</a> <a href="https://github.com/Ecole-des-Nouvelles-Images"><img alt="Static Badge" src="https://img.shields.io/badge/Github-grey?style=plastic&logo=github&logoColor=white"></a><br>
