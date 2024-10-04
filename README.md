@@ -39,17 +39,6 @@ Expect some laser-aiming, well-timed shields, a hint of power management and mos
 
 ## The Team
 
-<p align="center" dir="auto">
-    <a href="https://github.com/Aleyria"><img align="left" src="../main/Assets/Assets/UI/chibicam.png" width="15%" height="auto"></a>
-    <a href="https://github.com/Cyrielle-E"><img align="center" src="../main/Assets/Assets/UI/chibicyrielle.png" width="15%" height="auto"></a>
-    <a href="https://github.com/charlieBoyer"><img align="right" src="../main/Assets/Assets/UI/chibicharlie.png" width="15%" height="auto"></a>
-</p> 
-<p align="center" dir="auto">
-    <a align="left" href="https://github.com/Aleyria"><span>**Camilia FILHON**</span></a>
-    <a align="center" href="https://github.com/Cyrielle-E"><span>**Cyrielle ESCHALIER**</span></a>
-    <a align="right" href="https://github.com/charlieBoyer"><span>**Charlie BOYER**</span></a>                                                    
-</p>
-
 <table>
   <tbody>
     <tr>
