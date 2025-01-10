@@ -10,7 +10,7 @@
     <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/blob/main/README.md"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard?color=lightgrey"></a>
 </p>
 
-<br></br>
+<br>
 
 # Opération C.R.I.S.T.A.L.
 
@@ -22,23 +22,25 @@ Coordinates with your collegues to manage the convoy's technology and don't let 
 
 ## Introduction
 
+Opération C.R.I.S.T.A.L. is born in 2023 as a student project from the **[Ecole des Nouvelles Images](https://www.nouvellesimages.xyz/jeuvideo?lang=en)** &nbsp; <a href="https://github.com/Ecole-des-Nouvelles-Images"><img alt="Static Badge" src="https://img.shields.io/badge/Github-grey?style=plastic&logo=github&logoColor=white"></a><br>
+It was originally a month-and-half based project from pre-production to release but it continues to receive some love here and there.<br>
+<br>
+
 <p align="center">
     <img src="../main/Recordings/Sequence_002_0000.jpg" width="80%" height="auto">
-</p>
-
-Opération C.R.I.S.T.A.L. is born in 2023 as a student project from the <a href="https://www.nouvellesimages.xyz/jeuvideo?lang=en">*Ecole des Nouvelles Images*</a> <a href="https://github.com/Ecole-des-Nouvelles-Images"><img alt="Static Badge" src="https://img.shields.io/badge/Github-grey?style=plastic&logo=github&logoColor=white"></a><br>
-It was originally a month-and-half based project from pre-production to release but it continues to receive some love here and there.
+</p><br>
 
 ## Gameplay
 
 Expect some laser-aiming, well-timed shields, a hint of power management and most of all, a lot of coordination !
 
-> [!WARNING]  
+> [!NOTE]  
 > Missing gameplay video
-<br></br>
+
+<br>
 
 ## The Team
-
+<br>
 <table>
   <tbody>
     <tr>
@@ -48,28 +50,28 @@ Expect some laser-aiming, well-timed shields, a hint of power management and mos
     </tr>
     <tr>
         <td align="center">
-            <a href="https://github.com/Aleyria"><span>Camilia FILHON</span></a></br>
+            <a href="https://github.com/Aleyria"><strong>Camilia FILHON</strong></a></br>
             <ins>Technical 3D Artist:</ins> Environment & VFXs
         </td>
         <td align="center">
-            <a href="https://github.com/Cyrielle-E"><span>Cyrielle ESCHALIER</span></a></br>
+            <a href="https://github.com/Cyrielle-E"><strong>Cyrielle ESCHALIER</strong></a></br>
             <ins>Technical 3D Artist:</ins> Props & UI
         </td>
         <td align="center">
-            <a href="https://github.com/charlieBoyer"><span>Charlie BOYER</span></a></br>
+            <a href="https://github.com/charlieBoyer"><strong>Charlie BOYER</strong></a></br>
             <ins>Gameplay Developer</ins>
         </td>
     </tr>
   </tbody>
 </table>
+<br>
 
 ## Installation
 
-This game doesn't require anything in particular.</br>
-You can install the latest version of ***Opération C.R.I.S.T.A.L.*** by clicking this following badge:  <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases/latest/download/Operation.CRISTAL.v0.4.2.zip "><img alt="Static Badge" src="https://img.shields.io/badge/Download-.zip-%20%23510ED8?style=plastic"></a></br>
-Alternatively you can go to the <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases">release page</a> and download any version of your choice.
+You can install the latest version of ***Opération C.R.I.S.T.A.L.*** by clicking this following badge. &nbsp; <a href="https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases/latest/download/Operation.CRISTAL.v0.4.2.zip "><img alt="Static Badge" src="https://img.shields.io/badge/Download-.zip-%20%23510ED8?style=plastic"></a></br>
+Alternatively you can go to the **[Release page](https://github.com/Ecole-des-Nouvelles-Images/Top-Down-3D-Virtual-Vanguard/releases)** and download any version of your choice.
 
-Extract the .zip archive preferably somewhere under your user folder and launch the game with the provided .exe file
+Extract the `.zip` archive preferably somewhere under your user folder and launch the game with the provided `.exe` file.
 <p align="Left">
     <img src="../main/Recordings/Install.png">
 </p>
