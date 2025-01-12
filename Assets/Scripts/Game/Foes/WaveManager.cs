@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Game.Foes.FSM;
 using Internal;
 using UnityEngine;
 

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Convoy.Drones;
+using Game.Foes.FSM;
 using Game.Foes.FSM.States;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Game.Foes.FSM {
+namespace Game.Foes {
     public class Xenolith: MonoBehaviour {
         
         [Header("Gameplay")]

@@ -1,5 +1,5 @@
 ﻿using Game.Animation;
-using Game.Foes.FSM;
+using Game.Foes;
 using Game.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;

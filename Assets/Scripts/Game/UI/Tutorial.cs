@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Game.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -46,6 +47,11 @@ namespace Game.UI
         {
             if (_mainGamepad == null) {
                 _mainGamepad = Gamepad.current;
+                return;
+            }
+
+            if (_mainGamepad != null && PlayerManager.Instance.PlayerNumber < 1)
+            {
                 return;
             }
             
@@ -155,6 +161,7 @@ namespace Game.UI
             GameManager.InTutorial = false;
             _music.Stop();
             AudioManager.Instance.gameObject.SetActive(true);
+            AudioManager.Instance.SetVolumeManual("MasterVolume", .9f);
             gameObject.SetActive(false);
             _coroutineRunning = false;
         }

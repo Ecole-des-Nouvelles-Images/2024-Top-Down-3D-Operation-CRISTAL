@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Internal;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -11,6 +10,7 @@ namespace Game
     {
         [Header("References")]
         public AudioMixer Master;
+        public AudioMixer MasterTutorial;
         public Scrollbar MusicVolume;
         public Scrollbar FXVolume;
 
@@ -35,6 +35,13 @@ namespace Game
         [Header("Parameters")]
         public float TransitionDuration = 3f;
 
+        private void Start()
+        {
+            UpdateMusicVolume();
+            UpdateTutorialVolume();
+            UpdateSFXVolume();
+        }
+
         private void OnEnable()
         {
             Volume = MusicVolume.value;
@@ -44,7 +51,7 @@ namespace Game
             MusicSourceStop.loop = true;
             
             SetVolumeManual("BackgroundStopVolume", 0);
-            SetVolumeManual("BackgroundTransitVolume");
+            SetVolumeManual("BackgroundTransitVolume", Volume);
             
             MusicSourceTransit.Play();
             MusicSourceStop.Play();
@@ -62,25 +69,26 @@ namespace Game
             StartCoroutine(SwitchToBackgroundTransit(transitionDuration));
         }
 
-        public void SetVolumeManual(string volumeParameter, float manualOverride = -1)
+        public void SetVolumeManual(string volumeParameter, float overrideValue)
         {
-            float decibels = -80 * (1 - Volume);
-            float manual = -80 * (1 - manualOverride);
-            
-            if (manualOverride < 0)
+            float volumeValue = Mathf.Clamp(overrideValue, 0, 1);
+            float decibels = -80 * (1 - overrideValue);
+
+            switch (volumeParameter)
             {
-                Master.SetFloat(volumeParameter, decibels);
+                case "MasterVolume":
+                    Volume = volumeValue;
+                    MusicVolume.value = Volume;
+                    Master.SetFloat("MasterVolume", decibels);
+                    break;
+                case "SFXVolume":
+                    FXVolume.value = volumeValue;
+                    Master.SetFloat("SFXVolume", decibels);
+                    break;
+                default:
+                    Master.SetFloat(volumeParameter, decibels);
+                    break;
             }
-            else
-            {
-                Master.SetFloat(volumeParameter, manual);
-            }
-        }
-        
-        public void SetSFXVolume()
-        {
-            float decibels = -80 * (1 - FXVolume.value);
-            Master.SetFloat("SFXVolume", decibels);
         }
 
         private IEnumerator SwitchToBackgroundTransit(float duration)
@@ -135,7 +143,16 @@ namespace Game
 
         public void UpdateSFXVolume()
         {
-            Master.SetFloat("SFXVolume", FXVolume.value);
+            float decibels = -80 * (1 - FXVolume.value);
+            Master.SetFloat("SFXVolume", decibels);
+        }
+
+        public void UpdateTutorialVolume()
+        {
+            Volume = MusicVolume.value;
+            float decibels = -80 * (1 - Volume) + 3;
+
+            MasterTutorial.SetFloat("Volume", decibels);
         }
         
         #region Low Durability Alarm SFX
