@@ -1,7 +1,7 @@
 ﻿using System;
-using Cinemachine;
-using Internal;
 using UnityEngine;
+using Unity.Cinemachine;
+using Internal;
 
 namespace Game
 {
@@ -19,13 +19,12 @@ namespace Game
 
         private void Start()
         {
-            CinemachineVirtualCamera vcam = FollowCam.GetComponent<CinemachineVirtualCamera>();
-            vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = TransitShakeAmplitude;
+            CinemachineCamera vcam = FollowCam.GetComponent<CinemachineCamera>();
+            vcam.GetComponent<CinemachineBasicMultiChannelPerlin>().AmplitudeGain = TransitShakeAmplitude;
         }
 
         public void SwitchCameraFocus(bool switchToFollowCamera, Side mode)
         {
-            
             FollowCam.SetActive(switchToFollowCamera);
 
             switch (mode)
@@ -62,23 +61,23 @@ namespace Game
             
             foreach (Transform child in CurrentCamera.transform)
             {
-                CinemachineVirtualCamera cam = child.GetComponent<CinemachineVirtualCamera>();
+                CinemachineCamera cam = child.GetComponent<CinemachineCamera>();
 
                 if (!cam) continue;
 
                 if (findFarthermost)
                 {
-                    if (!(cam.m_Lens.FieldOfView > fov)) continue;
+                    if (!(cam.Lens.FieldOfView > fov)) continue;
                     
                     cameraToFind = cam.gameObject;
-                    fov = cam.m_Lens.FieldOfView;
+                    fov = cam.Lens.FieldOfView;
                 }
                 else
                 {
-                    if (!(cam.m_Lens.FieldOfView < fov)) continue;
+                    if (!(cam.Lens.FieldOfView < fov)) continue;
                     
                     cameraToFind = cam.gameObject;
-                    fov = cam.m_Lens.FieldOfView;
+                    fov = cam.Lens.FieldOfView;
                 }
             }
             

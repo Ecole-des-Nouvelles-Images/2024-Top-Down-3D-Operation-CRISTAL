@@ -68,7 +68,6 @@ namespace Game.UI
 
         private void ProgressTutorial()
         {
-            Debug.Log($"Tutorial: transitioning from panel {_tutorialIndex - 1} to {_tutorialIndex}");
             switch (_tutorialIndex)
             {
                 case 0:
@@ -135,8 +134,7 @@ namespace Game.UI
         private IEnumerator EndTutorial()
         {
             _coroutineRunning = true;
-            Debug.Log("Tutorial ending...");
-            
+
             float t = 0f;
             float initVolume = _music.volume;
 

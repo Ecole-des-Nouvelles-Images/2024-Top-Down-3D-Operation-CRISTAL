@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Unity.AI.Navigation;
+using Unity.Cinemachine;
 
-using Cinemachine;
 using Internal;
 using Game.Terrain.Procedural;
 using Game.Convoy;
@@ -18,7 +18,7 @@ namespace Game.Terrain
         [Header("References")]
         public GameObject BrakeVFX;
         public GameObject ConvoyTrails;
-        [SerializeField] private CinemachineVirtualCamera _transitCamera;
+        [SerializeField] private CinemachineCamera _transitCamera;
         [SerializeField] private Transform _chunksRoot;
         [SerializeField] private GameObject _chunkTransitPrefab;
         [SerializeField] private List<GameObject> _stopsPrefabs;
@@ -46,7 +46,7 @@ namespace Game.Terrain
         private void Start()
         {
             Chunks = new Queue<TerrainChunk>(_chunksQueueSize);
-            _camNoise = _transitCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            _camNoise = _transitCamera.GetComponent<CinemachineBasicMultiChannelPerlin>();
             _convoy = FindAnyObjectByType<ConvoyManager>().transform;
             
             float position = -_offsetBetweenChunks;
@@ -132,7 +132,7 @@ namespace Game.Terrain
         private IEnumerator ReachStopZone()
         {
             float initialDistance = _currentStopZone.transform.position.x;
-            float initialShakeAmplitude = _camNoise.m_AmplitudeGain;
+            float initialShakeAmplitude = _camNoise.AmplitudeGain;
             
             float actualDistance;
             float normalizeDistance;
@@ -149,7 +149,7 @@ namespace Game.Terrain
                 float shakeMultiplier = normalizeDistance;
                 
                 currentSpeed = ScrolledDistanceCurve.Evaluate(normalizeDistance);
-                _camNoise.m_AmplitudeGain = Mathf.Lerp(initialShakeAmplitude, 0, 1 - shakeMultiplier);
+                _camNoise.AmplitudeGain = Mathf.Lerp(initialShakeAmplitude, 0, 1 - shakeMultiplier);
                 
                 MoveChunks(currentSpeed, Time.deltaTime);
 
@@ -198,7 +198,7 @@ namespace Game.Terrain
             {
                 float multiplier = (ScrolledDistance / 240) + 0.01f ; // TODO: Starting speed controllable with 'ScrolledDistance' starting offset
                 currentSpeed = Mathf.Clamp(_scrollSpeed * multiplier, 0, _scrollSpeed);
-                _camNoise.m_AmplitudeGain = 0.08f * multiplier;
+                _camNoise.AmplitudeGain = 0.08f * multiplier;
                 
                 MoveChunks(currentSpeed, Time.deltaTime);
 

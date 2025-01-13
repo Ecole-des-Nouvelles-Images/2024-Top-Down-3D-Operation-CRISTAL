@@ -8,10 +8,10 @@ namespace Internal
 
         public static T Instance {
             get {
-                if (_instance == null) {
-                    _instance = (T)FindObjectOfType (typeof(T));
+                if (!_instance) {
+                    _instance = (T)FindFirstObjectByType(typeof(T));
  
-                    if (_instance == null) {
+                    if (!_instance) {
                         _instance = new GameObject(typeof(T).ToString()).AddComponent<T>();
                     }
                 }

@@ -6,6 +6,7 @@ using Game.Foes.FSM;
 using Game.Foes.FSM.States;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 namespace Game.Foes {
     public class Xenolith: MonoBehaviour {
@@ -24,8 +25,8 @@ namespace Game.Foes {
         public NavMeshAgent Agent;
         public Animator Animator;
 
-        [Header("Rendering")]
-        public Material DisolveShader;
+        [FormerlySerializedAs("DisolveShader")] [Header("Rendering")]
+        public Material DissolveShader;
         public float DeathAnimationDuration;
         private static readonly int Dissolve = Shader.PropertyToID("_Dissolve");
 
@@ -84,16 +85,17 @@ namespace Game.Foes {
             _internalTimer += Time.deltaTime;
         }
 
-        public IDamageable FetchNearestDamageable() {
+        public IDamageable FetchNearestDamageable()
+        {
             List<IDamageable> targetableDamageable = new List<IDamageable>();
             
-            // Fetch all damageables
-            foreach (IDamageable damageable in FindObjectsOfType<MonoBehaviour>().OfType<IDamageable>()) {
+            // Fetch all damageable
+            foreach (IDamageable damageable in FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include, FindObjectsSortMode.None).OfType<IDamageable>()) {
                 if (!damageable.IsTargetable) continue;
                 targetableDamageable.Add(damageable);
             }
             
-            // Select the neareast damageable
+            // Select the nearest damageable
             IDamageable nearestDamageable = null;
             float nearestDistance = Mathf.Infinity;
             foreach (IDamageable damageable in targetableDamageable) {
@@ -110,8 +112,8 @@ namespace Game.Foes {
         {
             List<IDamageable> targetableDamageable = new List<IDamageable>();
             
-            // Fetch all damageables
-            foreach (IDamageable damageable in FindObjectsOfType<MonoBehaviour>().OfType<IDamageable>()) {
+            // Fetch all damageable
+            foreach (IDamageable damageable in FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Include, FindObjectsSortMode.None).OfType<IDamageable>()) {
                 if (!damageable.IsTargetable) continue;
                 targetableDamageable.Add(damageable);
             }
@@ -157,7 +159,7 @@ namespace Game.Foes {
 
             for (int i = 0; i < materials.Count; i++)
             {
-                materials[i] = DisolveShader;
+                materials[i] = DissolveShader;
             }
 
             MeshRenderer.SetMaterials(materials);

@@ -2,8 +2,8 @@
 
 namespace Game.Convoy.Drones
 {
-    public interface IDamageable {
-        
+    public interface IDamageable
+    {
         bool IsTargetable { get; }
         GameObject GameObject { get; }
         Transform Transform { get; }
