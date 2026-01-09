@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game.Foes
+namespace Code.Scripts.Game.Foes
 {
     public class XenolithSpawner: MonoBehaviour
     {

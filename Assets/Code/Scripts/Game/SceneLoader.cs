@@ -1,9 +1,9 @@
 using System.Collections;
-using Internal;
+using Code.Scripts.Internal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Game
+namespace Code.Scripts.Game
 {
     public class SceneLoader : SingletonMonoBehaviour<SceneLoader>
     {

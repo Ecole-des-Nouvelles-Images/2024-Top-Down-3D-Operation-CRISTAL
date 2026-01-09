@@ -1,9 +1,8 @@
-using UnityEngine;
-
 using DG.Tweening;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Animation
+namespace Code.Scripts.Game.Animation
 {
     public class FadeBlinkImage : MonoBehaviour
     {

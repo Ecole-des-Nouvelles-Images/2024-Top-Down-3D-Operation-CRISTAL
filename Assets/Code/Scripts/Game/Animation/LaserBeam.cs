@@ -1,7 +1,7 @@
-using Game.Convoy.Modules;
+using Code.Scripts.Game.Convoy.Modules;
 using UnityEngine;
 
-namespace Game.Animation
+namespace Code.Scripts.Game.Animation
 {
     public class LaserBeam : MonoBehaviour
     {

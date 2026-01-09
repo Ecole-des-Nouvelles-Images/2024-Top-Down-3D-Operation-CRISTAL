@@ -1,9 +1,9 @@
-﻿using Internal;
+﻿using Code.Scripts.Internal;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-namespace Game.UI
+namespace Code.Scripts.Game
 {
     public class MenuAudioManager: SingletonMonoBehaviour<MenuAudioManager>
     {

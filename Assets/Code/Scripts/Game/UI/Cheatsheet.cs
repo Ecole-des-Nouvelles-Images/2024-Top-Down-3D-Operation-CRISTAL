@@ -1,9 +1,9 @@
-using Game.Convoy;
+using Code.Scripts.Game.Convoy;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.UI
+namespace Code.Scripts.Game.UI
 {
     public class Cheatsheet : MonoBehaviour
     {

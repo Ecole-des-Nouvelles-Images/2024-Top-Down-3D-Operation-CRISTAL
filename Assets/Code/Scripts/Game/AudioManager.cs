@@ -1,10 +1,10 @@
 ﻿using System.Collections;
-using Internal;
+using Code.Scripts.Internal;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-namespace Game
+namespace Code.Scripts.Game
 {
     public class AudioManager: SingletonMonoBehaviour<AudioManager>
     {

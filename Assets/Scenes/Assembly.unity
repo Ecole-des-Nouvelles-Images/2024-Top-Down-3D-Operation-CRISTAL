@@ -950,10 +950,30 @@ PrefabInstance:
       propertyPath: _droneParent
       value: 
       objectReference: {fileID: 669746445}
+    - target: {fileID: 890389263331858412, guid: 950cafe83cdf3564c8afbcbb09ec76af,
+        type: 3}
+      propertyPath: _droneMoveSpeed
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 890389263331858412, guid: 950cafe83cdf3564c8afbcbb09ec76af,
+        type: 3}
+      propertyPath: _droneRebuildTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1083772574012730345, guid: 950cafe83cdf3564c8afbcbb09ec76af,
         type: 3}
       propertyPath: m_Name
       value: Convoy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584020743315391556, guid: 950cafe83cdf3564c8afbcbb09ec76af,
+        type: 3}
+      propertyPath: BatteryCapacity
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584020743315391556, guid: 950cafe83cdf3564c8afbcbb09ec76af,
+        type: 3}
+      propertyPath: ConsumptionPerSecond
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2299675882982889775, guid: 950cafe83cdf3564c8afbcbb09ec76af,
         type: 3}
@@ -969,6 +989,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 100.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429800766846458717, guid: 950cafe83cdf3564c8afbcbb09ec76af,
+        type: 3}
+      propertyPath: BatteryCapacity
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429800766846458717, guid: 950cafe83cdf3564c8afbcbb09ec76af,
+        type: 3}
+      propertyPath: ConsumptionPerSecond
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6261553980419650995, guid: 950cafe83cdf3564c8afbcbb09ec76af,
         type: 3}
@@ -1375,7 +1405,7 @@ VFXRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632127889}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -1417,7 +1447,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632127889}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: 77e15be419db2ef4c9be7f84285cfccc, type: 3}
+  m_Asset: {fileID: 0}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0

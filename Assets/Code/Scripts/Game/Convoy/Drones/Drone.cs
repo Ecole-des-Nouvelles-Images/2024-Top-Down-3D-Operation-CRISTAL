@@ -1,10 +1,10 @@
 ﻿using System;
-using Game.Convoy.Modules;
-using Game.Player;
-using Game.POIs;
+using Code.Scripts.Game.Convoy.Modules;
+using Code.Scripts.Game.Player;
+using Code.Scripts.Game.POIs;
 using UnityEngine;
 
-namespace Game.Convoy.Drones
+namespace Code.Scripts.Game.Convoy.Drones
 {
     [RequireComponent(typeof(Rigidbody))]
     public class Drone: MonoBehaviour

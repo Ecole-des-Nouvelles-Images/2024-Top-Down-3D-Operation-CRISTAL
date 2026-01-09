@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game.Foes.FSM
+namespace Code.Scripts.Game.Foes.FSM
 {
     public abstract class XenolithBaseState
     {

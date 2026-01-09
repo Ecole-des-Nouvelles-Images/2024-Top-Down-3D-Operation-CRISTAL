@@ -1,10 +1,10 @@
-﻿using Game.Animation;
-using Game.Foes;
-using Game.Player;
+﻿using Code.Scripts.Game.Animation;
+using Code.Scripts.Game.Foes;
+using Code.Scripts.Game.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Game.Convoy.Modules
+namespace Code.Scripts.Game.Convoy.Modules
 {
     public class Laser: Module
     {

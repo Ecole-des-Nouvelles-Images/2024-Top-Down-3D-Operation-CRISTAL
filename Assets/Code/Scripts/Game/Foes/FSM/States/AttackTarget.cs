@@ -1,7 +1,7 @@
-﻿using Game.Convoy.Drones;
+﻿using Code.Scripts.Game.Convoy.Drones;
 using UnityEngine;
 
-namespace Game.Foes.FSM.States
+namespace Code.Scripts.Game.Foes.FSM.States
 {
     public class AttackTarget : BaseState
     {

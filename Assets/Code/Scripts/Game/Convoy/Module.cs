@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Code.Scripts.Game.Convoy.Drones;
+using Code.Scripts.Game.Player;
+using Code.Scripts.Game.UI;
 using DG.Tweening;
-using Game.Convoy.Drones;
-using Game.Player;
-using Game.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace Game.Convoy
+namespace Code.Scripts.Game.Convoy
 {
     public abstract class Module : MonoBehaviour, IDamageable
     {

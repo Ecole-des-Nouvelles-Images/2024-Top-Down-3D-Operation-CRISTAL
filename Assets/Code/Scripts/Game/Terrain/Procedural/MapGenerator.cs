@@ -2,7 +2,7 @@ using System;
 using Unity.AI.Navigation;
 using UnityEngine;
 
-namespace Game.Terrain.Procedural
+namespace Code.Scripts.Game.Terrain.Procedural
 {
     public enum GenerationMode
     {

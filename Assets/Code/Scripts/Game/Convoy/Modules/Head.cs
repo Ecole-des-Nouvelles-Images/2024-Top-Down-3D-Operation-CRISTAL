@@ -1,8 +1,8 @@
-using Game.Player;
+using Code.Scripts.Game.Player;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Convoy.Modules
+namespace Code.Scripts.Game.Convoy.Modules
 {
     public class Head : Module
     {

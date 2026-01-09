@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Convoy;
-using Game.Player;
-using Game.POIs;
-using Game.Terrain;
-using Internal;
+using Code.Scripts.Game.Convoy;
+using Code.Scripts.Game.Player;
+using Code.Scripts.Game.POIs;
+using Code.Scripts.Game.Terrain;
+using Code.Scripts.Internal;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace Game
+namespace Code.Scripts.Game
 {
     public class GameManager : SingletonMonoBehaviour<GameManager>
     {

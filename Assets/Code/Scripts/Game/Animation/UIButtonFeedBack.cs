@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Game.Animation
+namespace Code.Scripts.Game.Animation
 {
     public class UIButtonFeedBack : MonoBehaviour , ISelectHandler, IDeselectHandler
     {

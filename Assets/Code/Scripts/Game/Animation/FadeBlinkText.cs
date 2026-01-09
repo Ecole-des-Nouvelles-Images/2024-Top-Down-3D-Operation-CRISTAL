@@ -1,9 +1,8 @@
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
-using DG.Tweening;
-
-namespace Game.Animation
+namespace Code.Scripts.Game.Animation
 {
     public class FadeBlinkText : MonoBehaviour
     {

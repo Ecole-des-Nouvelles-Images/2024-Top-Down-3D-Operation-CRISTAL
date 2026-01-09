@@ -1,17 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
+using Code.Scripts.Game.Convoy;
+using Code.Scripts.Game.Convoy.Modules;
+using Code.Scripts.Game.Terrain.Procedural;
+using Code.Scripts.Internal;
 using Unity.AI.Navigation;
 using Unity.Cinemachine;
-
-using Internal;
-using Game.Terrain.Procedural;
-using Game.Convoy;
-using Game.Convoy.Modules;
+using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Game.Terrain
+namespace Code.Scripts.Game.Terrain
 {
     public class TerrainManager: SingletonMonoBehaviour<TerrainManager>
     {

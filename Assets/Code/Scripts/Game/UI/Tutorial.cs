@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections;
-using Game.Player;
+using Code.Scripts.Game.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Game.UI
+namespace Code.Scripts.Game.UI
 {
     public class Tutorial: MonoBehaviour
     {

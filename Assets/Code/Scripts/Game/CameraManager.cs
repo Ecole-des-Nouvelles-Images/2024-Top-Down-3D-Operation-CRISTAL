@@ -1,9 +1,9 @@
 ﻿using System;
-using UnityEngine;
+using Code.Scripts.Internal;
 using Unity.Cinemachine;
-using Internal;
+using UnityEngine;
 
-namespace Game
+namespace Code.Scripts.Game
 {
     public class CameraManager: SingletonMonoBehaviour<CameraManager>
     {

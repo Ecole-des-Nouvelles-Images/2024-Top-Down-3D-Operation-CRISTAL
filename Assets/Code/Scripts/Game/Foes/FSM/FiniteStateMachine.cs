@@ -1,7 +1,7 @@
 ﻿using System;
-using Game.Foes.FSM.States;
+using Code.Scripts.Game.Foes.FSM.States;
 
-namespace Game.Foes.FSM
+namespace Code.Scripts.Game.Foes.FSM
 {
     public class FiniteStateMachine {
         

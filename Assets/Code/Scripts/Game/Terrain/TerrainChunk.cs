@@ -1,10 +1,9 @@
-﻿using UnityEngine;
+﻿using Code.Scripts.Game.Foes;
+using Code.Scripts.Game.Terrain.Procedural;
 using Unity.AI.Navigation;
+using UnityEngine;
 
-using Game.Foes;
-using Game.Terrain.Procedural;
-
-namespace Game.Terrain
+namespace Code.Scripts.Game.Terrain
 {
     public class TerrainChunk: MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Game.UI
+namespace Code.Scripts.Game.UI
 {
     public class StartPanel: MonoBehaviour
     {

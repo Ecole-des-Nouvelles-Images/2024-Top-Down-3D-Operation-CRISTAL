@@ -3,7 +3,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Game.Convoy
+namespace Code.Scripts.Game.Convoy
 {
     public class ConvoyManager : MonoBehaviour
     {

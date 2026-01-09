@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Game.Animation
+namespace Code.Scripts.Game.Animation
 {
     public class SoloStateRandomTrigger : MonoBehaviour
     {

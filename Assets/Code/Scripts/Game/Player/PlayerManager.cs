@@ -1,11 +1,10 @@
-﻿using UnityEngine;
+﻿using Code.Scripts.Game.Convoy.Modules;
+using Code.Scripts.Game.UI;
+using Code.Scripts.Internal;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
-using Internal;
-using Game.Convoy.Modules;
-using Game.UI;
-
-namespace Game.Player
+namespace Code.Scripts.Game.Player
 {
     public class PlayerManager: SingletonMonoBehaviour<PlayerManager>
     {

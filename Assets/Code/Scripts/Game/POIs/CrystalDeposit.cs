@@ -2,7 +2,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Game.POIs
+namespace Code.Scripts.Game.POIs
 {
     public class CrystalDeposit: POI
     {

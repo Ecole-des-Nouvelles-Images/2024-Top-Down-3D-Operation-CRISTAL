@@ -1,4 +1,4 @@
-﻿namespace Game
+﻿namespace Code.Scripts.Game
 {
     public enum Side
     {

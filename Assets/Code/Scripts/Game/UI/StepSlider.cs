@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Game.UI
+namespace Code.Scripts.Game.UI
 {
     [Serializable]
     public class StepSlider : Slider

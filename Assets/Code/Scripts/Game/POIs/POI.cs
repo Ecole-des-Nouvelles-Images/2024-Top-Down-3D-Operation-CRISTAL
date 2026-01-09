@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game.POIs
+namespace Code.Scripts.Game.POIs
 {
     public abstract class POI: MonoBehaviour
     {

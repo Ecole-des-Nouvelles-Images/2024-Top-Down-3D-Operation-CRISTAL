@@ -1,4 +1,4 @@
-﻿namespace Game.POIs
+﻿namespace Code.Scripts.Game.POIs
 {
     public enum POIType
     {

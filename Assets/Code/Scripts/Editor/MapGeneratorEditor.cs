@@ -1,4 +1,4 @@
-using Game.Terrain.Procedural;
+using Code.Scripts.Game.Terrain.Procedural;
 using UnityEditor;
 using UnityEngine;
 

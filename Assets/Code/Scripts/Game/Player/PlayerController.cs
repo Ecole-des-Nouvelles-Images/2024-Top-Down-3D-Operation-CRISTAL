@@ -1,13 +1,13 @@
 using System;
-using Game.Convoy;
-using Game.Convoy.Drones;
-using Game.UI;
+using Code.Scripts.Game.Convoy;
+using Code.Scripts.Game.Convoy.Drones;
+using Code.Scripts.Game.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace Game.Player
+namespace Code.Scripts.Game.Player
 {
     [RequireComponent(typeof(Rigidbody))]
     public class PlayerController : MonoBehaviour

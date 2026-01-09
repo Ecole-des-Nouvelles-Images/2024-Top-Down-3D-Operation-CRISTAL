@@ -1,7 +1,7 @@
-﻿using Game.Player;
+﻿using Code.Scripts.Game.Player;
 using UnityEngine;
 
-namespace Game.Convoy.Modules
+namespace Code.Scripts.Game.Convoy.Modules
 {
     public class Shield: Module
     {

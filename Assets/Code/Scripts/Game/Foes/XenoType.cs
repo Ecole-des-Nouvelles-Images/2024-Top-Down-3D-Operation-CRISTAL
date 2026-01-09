@@ -1,4 +1,4 @@
-﻿namespace Game.Foes
+﻿namespace Code.Scripts.Game.Foes
 {
     public enum XenoType
     {

@@ -2,11 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Convoy.Drones;
-using Game.Player;
+using Code.Scripts.Game.Convoy.Drones;
+using Code.Scripts.Game.Player;
 using UnityEngine;
 
-namespace Game.Convoy.Modules
+namespace Code.Scripts.Game.Convoy.Modules
 {
     public class DroneController : Module
     {

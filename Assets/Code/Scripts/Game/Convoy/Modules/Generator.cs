@@ -1,9 +1,9 @@
 ﻿using System;
+using Code.Scripts.Game.Player;
 using DG.Tweening;
-using Game.Player;
 using UnityEngine;
 
-namespace Game.Convoy.Modules
+namespace Code.Scripts.Game.Convoy.Modules
 {
     public class Generator: Module
     {

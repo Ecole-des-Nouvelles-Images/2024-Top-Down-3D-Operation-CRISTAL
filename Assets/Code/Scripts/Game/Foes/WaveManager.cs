@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Internal;
+using Code.Scripts.Internal;
 using UnityEngine;
 
-namespace Game.Foes
+namespace Code.Scripts.Game.Foes
 {
     public class WaveManager : SingletonMonoBehaviour<WaveManager>
     {

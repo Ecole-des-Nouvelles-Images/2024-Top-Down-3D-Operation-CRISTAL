@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Game.Convoy.Drones
+namespace Code.Scripts.Game.Convoy.Drones
 {
     public interface IDamageable
     {
