@@ -109,10 +109,10 @@ MonoBehaviour:
   - {fileID: 7729461832712474581}
   - {fileID: 2778089444683167096}
   - {fileID: 3793881037319925014}
-  _droneMoveSpeed: 70
+  _droneMoveSpeed: 10
   _droneMiningSpeed: 10
   _droneArmorPlates: 2
-  _droneRebuildTime: 3
+  _droneRebuildTime: 10
   _enableDroneAutoRebuild: 1
 --- !u!33 &6225955691737232746
 MeshFilter:
@@ -139,6 +139,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -199,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
   m_OverrideArea: 0
   m_Area: 0
   m_OverrideGenerateLinks: 0

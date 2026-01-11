@@ -112,6 +112,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 5994245210116964776, guid: 72bc724dcaed3e94c85846684a4b33f4,
     type: 2}
   m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -758,6 +759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DroneController
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824534753871601817, guid: 227558e7cc38dbb48b746d5b633d328a,
+        type: 3}
+      propertyPath: _droneMoveSpeed
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5830779006375373356, guid: 227558e7cc38dbb48b746d5b633d328a,
         type: 3}

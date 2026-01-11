@@ -14,6 +14,7 @@ namespace Code.Scripts.Game.Player
     {
         [Header("References")]
         public float MoveSpeed;
+        private const float SENSITIVITY_FACTOR = 1000f;
         
         public bool IsBusy { get; set; }
         
@@ -68,6 +69,7 @@ namespace Code.Scripts.Game.Player
         {
             Vector2 value = input.Get<Vector2>();
 
+            value.Normalize();
             _inputValue = value;
         }
 
@@ -116,8 +118,8 @@ namespace Code.Scripts.Game.Player
         public void Move()
         {
             Vector3 moveAxis = transform.right + transform.forward;
-            Vector3 motion = moveAxis * ((Mathf.Abs(_inputValue.x) >= Math.Abs(_inputValue.y) ? _inputValue.x : _inputValue.y) * MoveSpeed * Time.deltaTime);
-            _rigidbody.AddForce(motion, ForceMode.Acceleration);
+            Vector3 motion = moveAxis * ((Mathf.Abs(_inputValue.x) >= Math.Abs(_inputValue.y) ? _inputValue.x : _inputValue.y) * MoveSpeed * SENSITIVITY_FACTOR);
+            _rigidbody.AddForce(motion * Time.deltaTime, ForceMode.Acceleration);
         }
 
         public void AssignDrone(Drone drone)

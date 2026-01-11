@@ -9,6 +9,8 @@ namespace Code.Scripts.Game.Convoy.Drones
     [RequireComponent(typeof(Rigidbody))]
     public class Drone: MonoBehaviour
     {
+        private const float SENSITIVITY_FACTOR = 0.01f;
+        
         public static int TotalDroneBuilt;
         
         public int ID { get; private set; }
@@ -24,7 +26,8 @@ namespace Code.Scripts.Game.Convoy.Drones
                 _operating = value;
                 if (_interacting && _operating)
                     _interacting = false;
-                if( _operating==false)SetMiningVFX(value);
+                if (!_operating)
+                    SetMiningVFX(value);
             }
         }
         public bool Interacting {
@@ -52,8 +55,6 @@ namespace Code.Scripts.Game.Convoy.Drones
         private bool _interacting;
         private POI _nearestPOI;
         
-        private float _moveSpeed;
-        private float _miningSpeed;
         private float _accumulatedMinedAmount;
 
         #region Debug
@@ -68,8 +69,6 @@ namespace Code.Scripts.Game.Convoy.Drones
             ID = ++TotalDroneBuilt;
             MaterialInstance = _body.GetComponent<Renderer>().material;
             _rigidbody = GetComponent<Rigidbody>();
-            _moveSpeed = DroneController.DroneMoveSpeed;
-            _miningSpeed = DroneController.DroneMiningSpeed;
         }
 
         private void Update()
@@ -124,8 +123,8 @@ namespace Code.Scripts.Game.Convoy.Drones
         
         public void Move(Vector2 input)
         {
-            Vector3 motion = new Vector3(input.x, 0, input.y) * (_moveSpeed * Time.deltaTime);
-            _rigidbody.MovePosition(Transform.position + motion);
+            Vector3 motion = new Vector3(input.x, 0, input.y) * (DroneController.DroneMoveSpeed * SENSITIVITY_FACTOR);
+            _rigidbody.MovePosition(Transform.position + motion); // Rigidbodies use fixed delta time internally;
             
             if (input.x != 0 || input.y != 0)
                 transform.forward = new Vector3(input.x, 0, input.y);
@@ -159,7 +158,7 @@ namespace Code.Scripts.Game.Convoy.Drones
                 return;
             }
             SetMiningVFX(true);
-            float minedAmount = _miningSpeed * Time.deltaTime * deposit.MiningSpeedMultiplier;
+            float minedAmount = DroneController.DroneMiningSpeed * Time.deltaTime * deposit.MiningSpeedMultiplier;
             _accumulatedMinedAmount += minedAmount;
 
             int amountToAdd = Mathf.FloorToInt(_accumulatedMinedAmount);

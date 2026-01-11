@@ -26,6 +26,14 @@ namespace Code.Scripts.Game.Convoy.Modules
         public static int DroneArmorPlates;
         
         private List<Drone> _drones;
+        
+#if UNITY_EDITOR
+        private void OnValidate()
+        {
+            DroneMoveSpeed = _droneMoveSpeed;
+            DroneMiningSpeed = _droneMiningSpeed;
+        }
+#endif
 
         protected override void Awake()
         {
