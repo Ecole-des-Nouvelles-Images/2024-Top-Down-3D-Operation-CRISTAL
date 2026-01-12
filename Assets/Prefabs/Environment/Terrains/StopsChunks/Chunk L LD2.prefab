@@ -1110,6 +1110,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1169,6 +1172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
   m_AgentTypeID: -1372625422
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
@@ -5997,6 +6001,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4916876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4916876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5081765
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5081765
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -91.89
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6154,6 +6193,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5617903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5617903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.42940855
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.42940855
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753667747022434714, guid: 65764f2db16f7c14680a6363ff747882,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 74.786
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
