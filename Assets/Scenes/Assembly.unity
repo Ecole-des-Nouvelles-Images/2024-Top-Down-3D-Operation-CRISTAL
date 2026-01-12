@@ -1861,6 +1861,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1911475621}
+    - target: {fileID: 820568843949834795, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1320131426495929201, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1871,11 +1876,35 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1141087501}
+    - target: {fileID: 1336127806579266147, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_text
+      value: "Le <color=\"yellow\"><font=\"Montserrat-Bold SDF><size=36>Cockpit de
+        Navigation</size></color></font> permet de rejoindre le prochain <#00FCF3><font=\"Montserrat-Bold
+        SDF>arr\xEAt</font></color> ou repartir en <#00FCF3><font=\"Montserrat-Bold
+        SDF>transit</font></color>.\n\n<u><font=\"Montserrat-Bold SDF>Tous les joueurs</font></u>
+        doivent se synchroniser pour l'utiliser !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336127806579266147, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430680525007575541, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2022465430520594952, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1136909187}
+    - target: {fileID: 3175358934827405417, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4146857336557240902, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1886,11 +1915,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4892065024689877065, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5088624162178378617, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1161750494}
+    - target: {fileID: 5304203383592252782, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341885367229542948, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_text
+      value: "En cas de danger, le <color=\"yellow><font=\"Montserrat-Bold SDF><size=36>g\xE9n\xE9rateur
+        de bouclier</size></font></color> peut prot\xE9ger le convoi."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665595500485526996, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443732260506806685, guid: b726c90f489276e4297f3082cc69e708,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7259865562744609166, guid: b726c90f489276e4297f3082cc69e708,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
